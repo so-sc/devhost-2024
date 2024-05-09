@@ -19,17 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-        {children}{" "}
-        <script
-          type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
-        />
-        <script
-          type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"
-        />
-      </body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
