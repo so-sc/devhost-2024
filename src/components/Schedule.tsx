@@ -112,7 +112,7 @@ const scheduleData = [
 const Schedule = () => {
   return (
     <div className="overflow-hidden py-20">
-      <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-5">
+      <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
         Schedule
       </h1>
       <div className="mx-auto max-w-7xl px-5">
