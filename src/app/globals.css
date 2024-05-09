@@ -35,3 +35,63 @@
     @apply bg-background text-foreground;
   }
 }
+
+.float1 {
+  transform: translateX(0px);
+  animation: float1 4s ease-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #b4ff39;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #72a127;
+}
+
+/* Underline for link */
+
+.underlined_link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.underlined_link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #b4ff39;
+  position: absolute;
+  bottom: 0px;
+  transition: width 0.2s ease;
+}
+
+.underlined_link:hover::after {
+  width: 100%;
+}
