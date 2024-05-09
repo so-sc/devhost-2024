@@ -6,7 +6,7 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center min-h-[100dvh] px-10">
       <div>
         <Image
-          src="/bg.svg"
+          src="/bg2.svg"
           className="absolute top-0 left-0 w-full -z-10"
           alt="logo"
           width={500}
