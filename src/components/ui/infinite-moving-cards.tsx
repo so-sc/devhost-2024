@@ -84,7 +84,9 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-          <div className="md:text-3xl text-2xl md:px-5 px-2">{item.title}</div>
+          <div key={idx} className="md:text-3xl text-2xl md:px-5 px-2">
+            {item.title}
+          </div>
         ))}
       </ul>
     </div>
