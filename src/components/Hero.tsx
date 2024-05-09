@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-[100dvh]">
+    <div className="flex flex-col justify-center items-center min-h-screen">
       <div className="absolute -z-20 inset-0 overflow-hidden">
         <Image
           src="/bg.svg"
