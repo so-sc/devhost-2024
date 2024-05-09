@@ -74,7 +74,7 @@ export default function Hero() {
           direction="right"
           speed="slow"
         /> */}
-        <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-10 text-center">
+        <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 md:pb-10 pb-20 text-center">
           14th - 16th June
         </h1>
       </div>
