@@ -101,7 +101,7 @@ const scheduleData = [
       },
       {
         icon: <PartyPopper />,
-        title: "Valefictory Function",
+        title: "Valedictory Function",
         time: "01:00 pm - 02:00 pm",
         description: "Prize Distribution.",
       },

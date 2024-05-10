@@ -74,15 +74,15 @@ export default function Hero() {
           direction="right"
           speed="slow"
         /> */}
-        <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 md:pb-10 pb-20 text-center">
+        <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-20 md:pb-10 text-center">
           14th - 16th June
         </h1>
       </div>
-      {/* <div className="pt-6">
+      {/* <div className="pb-20 pt-5 md:pb-10">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className="bg-background group flex items-center space-x-2"
+          className="bg-background px-10 group flex items-center space-x-2"
         >
           <span>Register Now</span>
           <span className="group-hover:text-primary">
