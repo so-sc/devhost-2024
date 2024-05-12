@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     "DevHost 2024",
   ],
   creator: "so-sc",
+  icons: {
+    icon: "/favicons/favicon.ico",
+    shortcut: "/favicons/favicon-16x16.png",
+    apple: "/favicons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({

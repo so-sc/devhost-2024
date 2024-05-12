@@ -98,6 +98,6 @@
 
 .speaker_card {
   background-image: url("/speaker_card.svg");
-  background-size: cover; /* This property ensures that the background image covers the entire element */
-  background-repeat: no-repeat; /* This property ensures that the background image is not repeated */
+  background-size: cover;
+  background-repeat: no-repeat;
 }

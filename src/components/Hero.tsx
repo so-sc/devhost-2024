@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="flex gap-5 justify-center items-center">
           <Image
             src="/sosc_logo.svg"
-            className="w-16 h-fit"
+            className="w-16 h-14"
             alt="logo"
             width={500}
             height={500}
@@ -49,7 +49,7 @@ export default function Hero() {
           <Image
             src="/niveus_logo_white.png"
             alt="logo"
-            className="w-20 h-fit"
+            className="w-20 h-4"
             width={500}
             height={500}
           />
@@ -60,7 +60,7 @@ export default function Hero() {
         <Image
           src="/logo.svg"
           alt="logo"
-          className="md:w-80 w-64"
+          className="md:w-80 md:h-[10.5rem] w-64 h-[8.4rem]"
           width={500}
           height={500}
         />
