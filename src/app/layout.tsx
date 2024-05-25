@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: "DevHost 2024",
     template: `%s - DevHost 2024`,
   },
-  description: "SOSC's flagship student developer meet.",
+  description: "Where Curiosity Meets Expertise.",
   keywords: [
     "sosc",
     "Sahyadri Open Source Community",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://devhost.sosc.org.in/",
     title: "DevHost 2024",
-    description: "SOSC's flagship student developer meet.",
+    description: "Where Curiosity Meets Expertise.",
     siteName: "DevHost 2024",
     images: [
       {
