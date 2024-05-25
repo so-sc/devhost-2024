@@ -2,7 +2,10 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Binary,
+  Blocks,
   BookCheckIcon,
+  Brain,
+  BrainCircuit,
   Bug,
   Computer,
   CookingPot,
@@ -11,11 +14,15 @@ import {
   Leaf,
   PartyPopper,
   ScrollIcon,
+  SendToBack,
   Soup,
   Sparkle,
   Sparkles,
   Users,
+  UsersRound,
+  Workflow,
 } from "lucide-react";
+import { PersonIcon } from "@radix-ui/react-icons";
 
 const scheduleData = [
   {
@@ -23,28 +30,33 @@ const scheduleData = [
     events: [
       {
         icon: <Leaf />,
-        title: "Inauguration",
-        time: "9:00 am - 10:30 am",
+        title: "Inaugural Keynote",
+        time: "9:00 am - 09:30 am",
         description: "",
       },
       {
         icon: <GitCompareArrows />,
-        title: "Technical Talk - Chief Guest",
-        time: "10:45 am - 12:30 pm",
+        title: "Technical Talk - Suyog Shetty",
+        time: "10:00 am - 10:45 am",
         description: "",
       },
       {
         icon: <CookingPot />,
         title: "Lunch Break",
-        time: "12:30 pm - 02:00 pm",
+        time: "01:00 pm - 01:45 pm",
+        description: "",
+      },
+      {
+        icon: <Blocks />,
+        title: "Web 3 Master Class - Subodh (Ethreal)",
+        time: "02:00 pm - 04:15 pm",
         description: "",
       },
       {
         icon: <Users />,
-        title: "Panel Discussion",
-        time: "02:00 pm - 04:30 pm",
-        description:
-          "Founders and CEO's of Mangalore, in collaboration with TiE Mangalore.",
+        title: "Open Networking",
+        time: "04:15 pm - 05:00 pm",
+        description: "",
       },
     ],
   },
@@ -52,29 +64,54 @@ const scheduleData = [
     day: "15th June",
     events: [
       {
-        icon: <Sparkles />,
-        title: "Informal inaugural of Hackathon",
-        time: "9:00 am",
+        icon: <BrainCircuit />,
+        title:
+          "Panel Discussion (Placement Ops) - Shashir Shetty, Nikhil, Mohit Tahillani",
+        time: "10:45 am - 12:30 pm",
         description: "",
+      },
+      {
+        icon: <Soup />,
+        title: "Lunch Break",
+        time: "12:30 pm - 01:30 pm",
+        description: "",
+      },
+      {
+        icon: <Workflow />,
+        title: "Google Technical Talk - Swasthik Shetty",
+        time: "01:45 pm - 02:30 pm",
+        description: "",
+      },
+      {
+        icon: <Brain />,
+        title: "Panel Discussion (MAANG) - Prasanna",
+        time: "02:45 pm - 04:15 pm",
+        description: "",
+      },
+      {
+        icon: <Users />,
+        title: "Open Networking",
+        time: "04:15 pm - 05:00 pm",
+        description: "",
+      },
+      {
+        icon: <SendToBack />,
+        title: "Hackathon Registration / Onboarding",
+        time: "05:00 pm - 05:30 pm",
+        description: "30 Teams to be participating offline in the Venue.",
       },
       {
         icon: <Bug />,
         title: "Hackathon Begins",
-        time: "10:00 am",
+        time: "06:00 pm",
         description: "30 Teams to be participating offline in the Venue.",
       },
       {
         icon: <ScrollIcon />,
         title: "Abstract Submission",
-        time: "12:30 pm - 02:00 pm",
+        time: "08:00 pm",
         description:
           "Teams will be asked to submit their respective abstracts.",
-      },
-      {
-        icon: <BookCheckIcon />,
-        title: "1st Round Evaluation",
-        time: "Evening",
-        description: "Judges will evaluate your progress.",
       },
     ],
   },
@@ -83,27 +120,21 @@ const scheduleData = [
     events: [
       {
         icon: <Binary />,
-        title: "Hackathon Ends",
-        time: "10:00 am",
-        description: "Final evaluation and presentation round begins.",
+        title: "Hackathon Ends + Evaluation",
+        time: "02:00 pm",
+        description: "7+3 minutes presentation & QnA (Per team)",
       },
       {
         icon: <Laptop2 />,
-        title: "Presentation Ends",
-        time: "12:00 pm",
+        title: "Keynote by Judges - Sujith Kumar & Krishna Prasad Rao",
+        time: "04:30 pm - 04:45 pm",
         description: "",
       },
       {
-        icon: <Soup />,
-        title: "Lunch Break",
-        time: "12:00 pm - 01:00 pm",
-        description: "Enjoy your meal while judges finalize the winners.",
-      },
-      {
         icon: <PartyPopper />,
-        title: "Valedictory Function",
-        time: "01:00 pm - 02:00 pm",
-        description: "Prize Distribution.",
+        title: "Participant Feedback",
+        time: "04:45 pm - 05:00 pm",
+        description: "",
       },
     ],
   },
