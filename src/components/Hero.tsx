@@ -65,7 +65,7 @@ export default function Hero() {
           height={500}
         />
         <p className="md:text-sm text-xs pt-3 tracking-wide text-primary">
-          An initiative towards the silicon beach.
+          Where Curiosity Meets Expertise.
         </p>
       </div>
       <div className="w-96 pt-5 md:w-auto md:max-w-3xl">

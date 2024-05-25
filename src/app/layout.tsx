@@ -25,6 +25,22 @@ export const metadata: Metadata = {
     "DevHost 2024",
   ],
   creator: "so-sc",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://devhost.sosc.org.in/",
+    title: "DevHost 2024",
+    description: "SOSC's flagship student developer meet.",
+    siteName: "DevHost 2024",
+    images: [
+      {
+        url: "https://devhost.sosc.org.in/og.png",
+        width: 1200,
+        height: 630,
+        alt: "DevHost 2024",
+      },
+    ],
+  },
   icons: {
     icon: "/favicons/favicon.ico",
     shortcut: "/favicons/favicon-16x16.png",
