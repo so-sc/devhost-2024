@@ -46,7 +46,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="py-4">
+    <div className="md:py-10 py-5 pb-10">
       <div className="w-full max-w-5xl mx-auto flex items-center">
         <CountdownItem num={remaining.days} text="days" />
         <CountdownItem num={remaining.hours} text="hours" />
@@ -68,7 +68,7 @@ const CountdownItem = ({ num, text }: { num: number; text: string }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-3xl md:text-4xl lg:text-5xl text-primary font-medium"
+            className="block text-3xl md:text-4xl lg:text-5xl text-primary font-semibold"
           >
             {num}
           </motion.span>
