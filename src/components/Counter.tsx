@@ -59,7 +59,7 @@ const Counter = () => {
 
 const CountdownItem = ({ num, text }: { num: number; text: string }) => {
   return (
-    <div className="font-mono w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
+    <div className="w-1/4 h-24 md:h-36 flex flex-col gap-1 md:gap-2 items-center justify-center">
       <div className="w-full text-center relative overflow-hidden">
         <AnimatePresence mode="popLayout">
           <motion.span
@@ -68,7 +68,7 @@ const CountdownItem = ({ num, text }: { num: number; text: string }) => {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ ease: "backIn", duration: 0.75 }}
-            className="block text-3xl md:text-4xl lg:text-5xl text-primary font-semibold"
+            className="block text-3xl md:text-4xl lg:text-5xl text-primary font-medium"
           >
             {num}
           </motion.span>

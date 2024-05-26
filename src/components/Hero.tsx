@@ -29,15 +29,6 @@ const testimonials = [
 export default function Hero() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
-      {/* <div className="absolute -z-20 inset-0 overflow-hidden">
-        <Image
-          src="/bg.svg"
-          width={500}
-          height={500}
-          alt="background"
-          className="object-right lg:h-full md:h-[75%] h-[50%] w-full object-cover"
-        ></Image>
-      </div> */}
       <motion.div
         initial={{ y: -10, opacity: 0, filter: "blur(5px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -58,6 +49,7 @@ export default function Hero() {
             <div className="flex flex-col pb-6 justify-center items-center">
               <div className="flex gap-5 justify-center items-center">
                 <Image
+                  priority
                   src="/sosc_logo.svg"
                   className="w-16 h-14"
                   alt="logo"
@@ -65,6 +57,7 @@ export default function Hero() {
                   height={500}
                 />
                 <Image
+                  priority
                   src="/niveus_logo_white.png"
                   alt="logo"
                   className="w-20 h-4"
@@ -76,6 +69,7 @@ export default function Hero() {
             </div>
             <div className="flex w-fit flex-col">
               <Image
+                priority
                 src="/logo.svg"
                 alt="logo"
                 className="md:w-80 md:h-[10.5rem] w-64 h-[8.4rem]"
@@ -108,10 +102,10 @@ export default function Hero() {
           >
             <div className="w-96 pt-5 md:w-auto md:max-w-3xl">
               {/* <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-        /> */}
+                items={testimonials}
+                direction="right"
+                speed="slow"
+              /> */}
               <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-20 md:pb-10 text-center">
                 14th - 16th June
               </h1>

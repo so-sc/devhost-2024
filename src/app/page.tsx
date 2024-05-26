@@ -16,6 +16,7 @@ export default function Home() {
       <div className="absolute top-0 right-0 -z-20">
         <Image
           src="/topo1.svg"
+          priority
           width={500}
           height={500}
           alt="background"
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="absolute top-0 left-0 -z-20">
         <Image
           src="/topo2.svg"
+          priority
           width={500}
           height={500}
           alt="background"
