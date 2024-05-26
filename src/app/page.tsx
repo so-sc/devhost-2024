@@ -13,13 +13,22 @@ export default function Home() {
     <main className="max-w-6xl px-5 mx-auto">
       <CursorTrailCanvas className="pointer-events-none z-50 md:flex hidden fixed inset-0 h-full w-full" />
       <Hero />
-      <div className="absolute -z-20 inset-0">
+      <div className="absolute top-0 right-0 -z-20">
         <Image
-          src="/topo.svg"
+          src="/topo1.svg"
           width={500}
           height={500}
           alt="background"
-          className="object-right lg:w-80 lg:h-[52rem] md:w-60 md:h-[39rem] w-40 h-[26rem] md:mt-96 sm:mt-[30rem] mt-[40rem] object-cover"
+          className="object-right lg:w-[40rem] lg:h-[40rem] md:w-[30rem] md:h-[30rem] w-96 h-96 object-cover"
+        ></Image>
+      </div>
+      <div className="absolute top-0 left-0 -z-20">
+        <Image
+          src="/topo2.svg"
+          width={500}
+          height={500}
+          alt="background"
+          className="object-right lg:w-[53rem] lg:h-[53rem] md:w-[40rem] md:h-[40rem] w-[30rem] h-[30rem] md:mt-96 sm:mt-[30rem] mt-[40rem] object-cover"
         ></Image>
       </div>
       <Counter />

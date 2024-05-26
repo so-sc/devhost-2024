@@ -29,7 +29,7 @@ const testimonials = [
 export default function Hero() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="absolute -z-20 inset-0 overflow-hidden">
+      {/* <div className="absolute -z-20 inset-0 overflow-hidden">
         <Image
           src="/bg.svg"
           width={500}
@@ -37,7 +37,7 @@ export default function Hero() {
           alt="background"
           className="object-right lg:h-full md:h-[75%] h-[50%] w-full object-cover"
         ></Image>
-      </div>
+      </div> */}
       <motion.div
         initial={{ y: -10, opacity: 0, filter: "blur(5px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
