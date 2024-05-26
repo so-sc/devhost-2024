@@ -7,6 +7,7 @@ import {
   Brain,
   BrainCircuit,
   Bug,
+  Code2,
   Computer,
   CookingPot,
   GitCompareArrows,
@@ -33,30 +34,35 @@ const scheduleData = [
         title: "Inaugural Keynote",
         time: "9:00 am - 09:30 am",
         description: "",
+        speaker: "",
       },
       {
         icon: <GitCompareArrows />,
-        title: "Technical Talk - Suyog Shetty",
+        title: "Technical Talk",
         time: "10:00 am - 10:45 am",
         description: "",
+        speaker: "Suyog Shetty",
       },
       {
         icon: <CookingPot />,
         title: "Lunch Break",
         time: "01:00 pm - 01:45 pm",
         description: "",
+        speaker: "",
       },
       {
         icon: <Blocks />,
-        title: "Web 3 Master Class - Subodh (Ethreal)",
+        title: "Web 3 Master Class",
         time: "02:00 pm - 04:15 pm",
         description: "",
+        speaker: "Subodh (Ethreal)",
       },
       {
         icon: <Users />,
         title: "Open Networking",
         time: "04:15 pm - 05:00 pm",
         description: "",
+        speaker: "",
       },
     ],
   },
@@ -65,34 +71,38 @@ const scheduleData = [
     events: [
       {
         icon: <BrainCircuit />,
-        title:
-          "Panel Discussion (Placement Ops) - Shashir Shetty, Nikhil, Mohit Tahillani",
+        title: "Panel Discussion (Placement Ops)",
         time: "10:45 am - 12:30 pm",
         description: "",
+        speaker: "Shashir Shetty, Nikhil, Mohit Tahillani",
       },
       {
         icon: <Soup />,
         title: "Lunch Break",
         time: "12:30 pm - 01:30 pm",
         description: "",
+        speaker: "",
       },
       {
         icon: <Workflow />,
-        title: "Google Technical Talk - Swasthik Shetty",
+        title: "Technical Talk",
         time: "01:45 pm - 02:30 pm",
         description: "",
+        speaker: "Swasthik Shetty (Google)",
       },
       {
         icon: <Brain />,
-        title: "Panel Discussion (MAANG) - Prasanna",
+        title: "Panel Discussion (MAANG)",
         time: "02:45 pm - 04:15 pm",
         description: "",
+        speaker: "Prasanna",
       },
       {
         icon: <Users />,
         title: "Open Networking",
         time: "04:15 pm - 05:00 pm",
         description: "",
+        speaker: "",
       },
       {
         icon: <SendToBack />,
@@ -119,22 +129,24 @@ const scheduleData = [
     day: "16th June",
     events: [
       {
-        icon: <Binary />,
+        icon: <Code2 />,
         title: "Hackathon Ends + Evaluation",
         time: "02:00 pm",
         description: "7+3 minutes presentation & QnA (Per team)",
       },
       {
         icon: <Laptop2 />,
-        title: "Keynote by Judges - Sujith Kumar & Krishna Prasad Rao",
+        title: "Keynote by Judges",
         time: "04:30 pm - 04:45 pm",
         description: "",
+        speaker: "Sujith Kumar & Krishna Prasad Rao",
       },
       {
         icon: <PartyPopper />,
         title: "Participant Feedback",
         time: "04:45 pm - 05:00 pm",
         description: "",
+        speaker: "",
       },
     ],
   },
@@ -166,9 +178,12 @@ const Schedule = () => {
                       <span className="absolute flex items-center justify-center w-10 h-10 bg-background rounded-full -start-5 ring-8 ring-background">
                         {event.icon}
                       </span>
-                      <h3 className="flex items-center mb-2 text-xl font-semibold">
+                      <h3 className="flex items-center text-xl font-semibold">
                         {event.title}
                       </h3>
+                      <div className="mb-2 text-primary tracking-wide">
+                        {event.speaker}
+                      </div>
                       <time className="block mb-2 font-normal leading-none text-white/60">
                         {event.time}
                       </time>
