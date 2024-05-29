@@ -116,7 +116,7 @@ export default function Speakers() {
                   <h1 className="leading-6 mb-1 font-semibold text-xl tracking-wider">
                     {card.speaker}
                   </h1>
-                  <h1 className="leading-6 mb-1 pt-2 font-semibold text-lg text-primary tracking-wider">
+                  <h1 className="leading-6 mb-1 pt-2 font-semibold text-base text-primary tracking-wider">
                     {card.title}
                   </h1>
                   <p className="text-sm tracking-wider py-2">
