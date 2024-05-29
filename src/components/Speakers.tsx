@@ -15,66 +15,77 @@ interface CardData {
 const cardData: CardData[] = [
   {
     id: 1,
-    title: "Unlocking Business Potential with Salesforce Cloud",
-    date: "23rd, 05:00 pm - 07:00 pm",
+    title: "Chief Executive Officer at Niveus Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Experienced Salesforce Developer specializing in Apex, Triggers, Aura, and LWC, currently serving as the team lead at Novigo Solutions.",
-    speaker: "Mohammed Shahid",
-    linkedin: "https://www.linkedin.com/in/shahidbit/",
-    imageSrc: "shahid.jpg",
+      "Suyog Shetty, Co-founder & CEO at Niveus Solutions, a distinguished Google Cloud consulting company. 15+ years of experience in IT consulting, with expertise in cloud technologies, video broadcasting, and digital transformation. Formerly at Infosys and Wipro. 3-time winner of Google Cloud's Cloud Partner of the Year award.",
+    speaker: "Suyog Shetty",
+    linkedin: "",
+    imageSrc: "suyog_shetty.png",
   },
 
   {
     id: 2,
-    title: "Exploring DevOps Essentials for Modern Innovation",
-    date: "23rd, 07:00 pm - 08:30 pm",
+    title: "Engineer at Apple",
+    date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Master of Science and Graduate Research Assistant at The University of Texas at Arlington, USA. Former Java Full Stack Developer at IBM with expertise in Spring Boot, Angular, Cloud, CI/CD, Node.js, and Python.",
-    speaker: "Arjun Suvarna",
-    linkedin: "https://www.linkedin.com/in/arjun-suvarna/",
-    imageSrc: "arjun.jpg",
+      "Deekshith Bellare, accomplished engineer at Apple, with 15+ years of experience in tech. Held key positions at Paytm and Robosoft. Expertise spans multiple engineering domains, known for innovative approach and dedication to excellence. Contributes to cutting-edge tech advancements at Apple.",
+    speaker: "Deekshith Bellare",
+    linkedin: "",
+    imageSrc: "deekshith_bellare.png",
   },
 
   {
     id: 3,
-    title: "Engineering and UX Synergy",
-    date: "24th, 11:00 am - 12:30 pm",
+    title: "Chief Growth Officer at Niveus Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Senior UI/UX Designer at Novigo Solutions with a strong background in graphic design. Former Design Head at SOSC, bringing 5 years of expertise in UI/UX.",
-    speaker: "Adib Ghani Ahamed",
-    linkedin: "https://www.linkedin.com/in/adib-kalopsia/",
-    imageSrc: "adib.jpg",
+      "Shasir Shetty, Chief Growth Officer at Niveus Solutions, driving expansion and strategic initiatives. Expertise in Diversity & Inclusion, Change Management, Management Consulting, HR Consulting, and HR. Fosters inclusive workplaces, guiding Niveus towards growth and innovation.",
+    speaker: "Shasir Shetty",
+    linkedin: "",
+    imageSrc: "shasir_shetty.png",
   },
 
   {
     id: 4,
-    title: "Ask me anything about Placements",
+    title: "Solution Architect at Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Cloud Solutions Engineer at Google. Formerly led open-source communities, including GitHub Campus Expert, Microsoft LSA, HackClub, Codechef, and SOSC.",
-    speaker: "Swasthik Shetty",
-    linkedin: "https://www.linkedin.com/in/swaaz/",
-    imageSrc: "swaaz.jpg",
+      "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
+    speaker: "Sujith Kumar",
+    linkedin: "",
+    imageSrc: "sujith_kumar.png",
   },
 
   {
     id: 5,
-    title: "Promising with JavaScript",
-    date: "24th, 03:30 pm - 05:00 pm",
+    title: "Cloud Engineer at Niveus Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Frontend Developer and the President of Sahyadri Open Source Community, Postman Student Leader at SCEM. Intern at Niveus Solutions, Mangalore. Loves building projects. Exploring Cloud and DevOps.",
-    speaker: "Deveesh Shetty",
-    linkedin: "https://www.linkedin.com/in/deveesh-shetty/",
-    imageSrc: "deveesh.jpeg",
+      "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
+    speaker: "Krishna Prasad N Rao",
+    linkedin: "",
+    imageSrc: "krishna_prasad_n_rao.png",
+  },
+
+  {
+    id: 6,
+    title: "Cloud Solutions Engineer at Google",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Cloud Solutions Engineer at Google. Formerly led open-source communities, including GitHub Campus Expert, Microsoft LSA, HackClub, Codechef, and SOSC.",
+    speaker: "Swasthik Shetty",
+    linkedin: "",
+    imageSrc: "swasthik.jpg",
   },
 ];
 
 export default function Speakers() {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center pb-10 items-center w-full">
       <div className="max-w-5xl my-20">
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-16 pb-10">
-          Panel Members
+          Speakers
         </h1>
         <div className="grid md:grid-cols-2 gap-10">
           {cardData.map((card) => (
@@ -105,18 +116,23 @@ export default function Speakers() {
                   <h1 className="leading-6 mb-1 font-semibold text-xl tracking-wider">
                     {card.speaker}
                   </h1>
+                  <h1 className="leading-6 mb-1 pt-2 font-semibold text-lg text-primary tracking-wider">
+                    {card.title}
+                  </h1>
                   <p className="text-sm tracking-wider py-2">
                     {card.description}
                   </p>
-                  <div className="flex justify-between text-primary font-nebulaR tracking-wide">
-                    <Link
-                      className="underlined_link hover:text-white"
-                      href={card.linkedin}
-                      target="_blank"
-                    >
-                      linkedin
-                    </Link>
-                  </div>
+                  {card.linkedin && (
+                    <div className="flex justify-between text-primary font-nebulaR tracking-wide">
+                      <Link
+                        className="underlined_link hover:text-white"
+                        href={card.linkedin}
+                        target="_blank"
+                      >
+                        linkedin
+                      </Link>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
