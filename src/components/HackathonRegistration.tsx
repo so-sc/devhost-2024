@@ -14,10 +14,10 @@ const testimonials = [
     title: "Registrations",
   },
   {
-    title: "Hackathon",
+    title: "Open",
   },
   {
-    title: "Open",
+    title: "Hackathon",
   },
   {
     title: "Registrations",
