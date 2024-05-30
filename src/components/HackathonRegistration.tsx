@@ -38,7 +38,7 @@ const testimonials = [
 
 export default function HackathonRegistration() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col overflow-hidden justify-center items-center">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -62,7 +62,7 @@ export default function HackathonRegistration() {
         <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-primary rounded-lg" />
           <div className="px-8 flex justify-center items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition duration-200 text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
-            <span>Register Now</span>
+            <span>Register for Hackathon</span>
             <span>
               <ArrowRightIcon />
             </span>
