@@ -1,9 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { AnimatePresence, motion } from "framer-motion";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
+import { ArrowRightIcon } from "@radix-ui/react-icons"
+import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
 
 const testimonials = [
   {
@@ -24,7 +25,7 @@ const testimonials = [
   {
     title: "Stay Tuned",
   },
-];
+]
 
 export default function Hero() {
   return (
@@ -110,18 +111,23 @@ export default function Hero() {
                 14th - 16th June
               </h1>
             </div>
-            {/* <div className="pb-20 pt-5 md:pb-10">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="bg-background px-10 group flex items-center space-x-2"
+            <div className="flex justify-center pb-20 pt-5 md:pb-10">
+              <Link
+                href="https://unstop.com/o/8SGos2D?lb=ZReY3Op"
+                target="_blank"
               >
-                <span>Register Now</span>
-                <span className="group-hover:text-primary">
-                  <ArrowRightIcon />
-                </span>
-              </HoverBorderGradient>
-            </div> */}
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="bg-background px-10 group flex items-center space-x-2"
+                >
+                  <span>Register Now for Hackathon</span>
+                  <span className="group-hover:text-primary">
+                    <ArrowRightIcon />
+                  </span>
+                </HoverBorderGradient>
+              </Link>
+            </div>
           </motion.div>
         </AnimatePresence>
       </motion.div>
@@ -140,5 +146,5 @@ export default function Hero() {
         </svg>
       </div>
     </div>
-  );
+  )
 }
