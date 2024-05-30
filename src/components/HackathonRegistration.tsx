@@ -61,7 +61,7 @@ export default function HackathonRegistration() {
         </HoverBorderGradient> */}
         <button className="p-[3px] relative">
           <div className="absolute inset-0 bg-primary rounded-lg" />
-          <div className="px-8 flex justify-center items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition duration-200 text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
+          <div className="px-8 flex justify-center duration-300 items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
             <span>Register for Hackathon</span>
             <span>
               <ArrowRightIcon />
