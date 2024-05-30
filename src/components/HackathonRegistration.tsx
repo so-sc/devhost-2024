@@ -11,19 +11,28 @@ const testimonials = [
     title: "Hackathon",
   },
   {
-    title: "Registrations Open",
+    title: "Registrations",
   },
   {
     title: "Hackathon",
   },
   {
-    title: "Registrations Open",
+    title: "Open",
+  },
+  {
+    title: "Registrations",
+  },
+  {
+    title: "Open",
   },
   {
     title: "Hackathon",
   },
   {
-    title: "Registrations Open",
+    title: "Registrations",
+  },
+  {
+    title: "Open",
   },
 ];
 
@@ -35,8 +44,12 @@ export default function HackathonRegistration() {
         direction="right"
         speed="slow"
       />
-      <Link href="/" target="_blank" className="pb-20 pt-5 md:pb-10">
-        <HoverBorderGradient
+      <Link
+        href="https://unstop.com/o/8SGos2D?lb=ZReY3Op"
+        target="_blank"
+        className="pb-20 pt-5 md:pb-10"
+      >
+        {/* <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
           className="bg-primary font-semibold text-black tracking-wider text-lg px-10 group flex items-center space-x-2"
@@ -45,7 +58,16 @@ export default function HackathonRegistration() {
           <span className="group-hover:text-black">
             <ArrowRightIcon />
           </span>
-        </HoverBorderGradient>
+        </HoverBorderGradient> */}
+        <button className="p-[3px] relative">
+          <div className="absolute inset-0 bg-primary rounded-lg" />
+          <div className="px-8 flex justify-center items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition duration-200 text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
+            <span>Register Now</span>
+            <span>
+              <ArrowRightIcon />
+            </span>
+          </div>
+        </button>
       </Link>
     </div>
   );
