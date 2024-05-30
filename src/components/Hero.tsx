@@ -125,6 +125,7 @@ export default function Hero() {
           </motion.div>
         </AnimatePresence>
       </motion.div>
+
       <div className="absolute z-40 float1 bottom-0 py-10">
         <svg
           className="w-8"

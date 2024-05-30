@@ -7,12 +7,14 @@ import Schedule from "@/components/Schedule";
 import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 import Counter from "@/components/Counter";
 import Image from "next/image";
+import HackathonRegistration from "@/components/HackathonRegistration";
 
 export default function Home() {
   return (
     <main className="max-w-6xl px-5 mx-auto">
       <CursorTrailCanvas className="pointer-events-none z-50 md:flex hidden fixed inset-0 h-full w-full" />
       <Hero />
+      <HackathonRegistration />
       <div className="absolute top-0 right-0 -z-20">
         <Image
           src="/topo1.svg"
