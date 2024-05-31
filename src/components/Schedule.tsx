@@ -217,10 +217,10 @@ const Schedule = () => {
                       <span className="absolute flex items-center justify-center w-10 h-10 bg-background rounded-full -start-5 ring-8 ring-background">
                         {event.icon}
                       </span>
-                      <h3 className="flex items-center text-xl font-semibold">
+                      <h3 className="flex items-center md:text-xl text-lg tracking-wider font-semibold">
                         {event.title}
                       </h3>
-                      <div className="mb-2 text-primary tracking-wide">
+                      <div className="mb-2 text-primary md:text-base text-sm tracking-wider">
                         {event.speaker}
                       </div>
                       <time className="block mb-2 font-normal leading-none text-white/60">
