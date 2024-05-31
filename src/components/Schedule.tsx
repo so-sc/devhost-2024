@@ -125,7 +125,7 @@ const scheduleData = [
         title: "Lunch Break",
         time: "12:45 pm - 01:45 pm",
         description: "",
-        speaker: "To be revealed soon",
+        speaker: "",
       },
       {
         icon: <Brain />,
