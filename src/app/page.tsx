@@ -8,6 +8,7 @@ import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 import Counter from "@/components/Counter";
 import Image from "next/image";
 import HackathonRegistration from "@/components/HackathonRegistration";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <Schedule />
       {/* <Speakers /> */}
       {/* <FAQ /> */}
+      <Map />
     </main>
   );
 }

@@ -29,6 +29,14 @@ export default function Hero() {
               <div className="flex gap-5 justify-center items-center">
                 <Image
                   priority
+                  src="/sahyadri_logo.png"
+                  className="w-14 h-12"
+                  alt="logo"
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  priority
                   src="/sosc_logo.svg"
                   className="w-16 h-14"
                   alt="logo"
