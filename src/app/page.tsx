@@ -9,6 +9,7 @@ import Counter from "@/components/Counter";
 import Image from "next/image";
 import HackathonRegistration from "@/components/HackathonRegistration";
 import Map from "@/components/Map";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       </div>
       <Counter />
       <Schedule />
+      <Sponsors />
       {/* <Speakers /> */}
       {/* <FAQ /> */}
       <Map />
