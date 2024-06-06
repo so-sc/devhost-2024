@@ -6,7 +6,7 @@ const Sponsors = () => {
     <div className="overflow-hidden pb-20 flex flex-col gap-20">
       <div>
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
-          Title Sponsors
+          Title Sponsor
         </h1>
         <div className="max-w-7xl p-5">
           <Image
@@ -24,7 +24,7 @@ const Sponsors = () => {
       </div>
       <div>
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
-          Associate Sponsors
+          Associate Sponsor
         </h1>
         <div className="max-w-7xl p-5">
           <Image
@@ -56,7 +56,7 @@ const Sponsors = () => {
       </div>
       <div>
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
-          Fitness Partners
+          Fitness Partner
         </h1>
         <div className="max-w-7xl p-5">
           <Image
@@ -73,9 +73,9 @@ const Sponsors = () => {
         </div>
       </div>
       <div>
-        {/* <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
-          Associate Sponsors
-        </h1> */}
+        <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
+          Community Partner
+        </h1>
         <div className="max-w-7xl p-5">
           <Image
             priority
@@ -92,7 +92,7 @@ const Sponsors = () => {
       </div>
       <div>
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
-          Venue Partners
+          Venue Partner
         </h1>
         <div className="max-w-7xl p-5">
           <Image
