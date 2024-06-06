@@ -24,6 +24,38 @@ const Sponsors = () => {
       </div>
       <div>
         <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
+          Associate Sponsors
+        </h1>
+        <div className="max-w-7xl p-5">
+          <Image
+            priority
+            src="/sponsors/unicourt.png"
+            className="w-80 h-40 mx-auto"
+            alt="logo"
+            width={500}
+            height={500}
+          />
+          <p className="text-center text-primary text-xl pt-4">Unicourt</p>
+        </div>
+      </div>
+      <div>
+        <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
+          Industry Partner
+        </h1>
+        <div className="max-w-7xl p-5">
+          <Image
+            priority
+            src="/sponsors/pacewisdom.png"
+            className="w-80 h-20 mx-auto"
+            alt="logo"
+            width={500}
+            height={500}
+          />
+          <p className="text-center text-primary text-xl pt-4">Unicourt</p>
+        </div>
+      </div>
+      <div>
+        <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
           Fitness Partners
         </h1>
         <div className="max-w-7xl p-5">
@@ -37,6 +69,24 @@ const Sponsors = () => {
           />
           <p className="text-center text-primary text-xl pt-4">
             Zeus Fitness Club
+          </p>
+        </div>
+      </div>
+      <div>
+        {/* <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-10 pb-6">
+          Associate Sponsors
+        </h1> */}
+        <div className="max-w-7xl p-5">
+          <Image
+            priority
+            src="/sponsors/ieee-mss.png"
+            className="w-80 h-20 mx-auto"
+            alt="logo"
+            width={500}
+            height={500}
+          />
+          <p className="text-center text-primary text-xl pt-4">
+            IEEE Mangalore Subsection
           </p>
         </div>
       </div>
