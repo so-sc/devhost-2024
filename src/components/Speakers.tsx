@@ -25,6 +25,28 @@ const cardData: CardData[] = [
   },
 
   {
+    id: 1,
+    title: "Associate Professor, NITK Surathkal",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Mohit P. Tahiliani, Associate Professor at NITK Surathkal, specialises in Internet Traffic Engineering, focusing on TCP optimizations and Linux queue disciplines. He contributes to open source, co-maintaining TCP modules in ns-3 and contributing 'FQ-PIE' to the Linux kernel v5.6. Mohit holds leadership roles in IEEE Mangalore Subsection, ns-3 consortium, and the India Internet Engineering Society.",
+    speaker: "Mohit P. Tahiliani",
+    linkedin: "",
+    imageSrc: "mohit.png",
+  },
+
+  {
+    id: 1,
+    title: "Co-Founder & CCO, Novigo Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Shihab Kalandar is the Co-Founder and Chief Commercial Officer at Novigo Solutions Pvt. Ltd. With over 15 years of experience in Sales & Marketing across the Middle East and North America, he leads the Business Development and Client Relations Team. Shihab started his career at Accenture and TCS, bringing expertise in IT solutions, customer relationship management, and strategic growth to Novigo.",
+    speaker: "Shihab Kalandar",
+    linkedin: "",
+    imageSrc: "shihab.png",
+  },
+
+  {
     id: 2,
     title: "Engineer at Apple",
     date: "24th, 02:00 pm - 03:30 pm",
@@ -37,7 +59,7 @@ const cardData: CardData[] = [
 
   {
     id: 3,
-    title: "Chief Growth Officer at Niveus Solutions Pvt. Ltd.",
+    title: "Chief Growth Officer, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Shasir Shetty, Chief Growth Officer at Niveus Solutions, driving expansion and strategic initiatives. Expertise in Diversity & Inclusion, Change Management, Management Consulting, HR Consulting, and HR. Fosters inclusive workplaces, guiding Niveus towards growth and innovation.",
@@ -48,7 +70,7 @@ const cardData: CardData[] = [
 
   {
     id: 4,
-    title: "Solution Architect at Niveus Solutions Pvt. Ltd.",
+    title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
@@ -59,7 +81,7 @@ const cardData: CardData[] = [
 
   {
     id: 5,
-    title: "Cloud Engineer at Niveus Solutions Pvt. Ltd.",
+    title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
@@ -69,23 +91,34 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 6,
-    title: "Cloud Solutions Engineer at Google",
+    id: 4,
+    title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Cloud Solutions Engineer at Google. Formerly led open-source communities, including GitHub Campus Expert, Microsoft LSA, HackClub, Codechef, and SOSC.",
-    speaker: "Swasthik Shetty",
+      "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
+    speaker: "Jaison Dias",
     linkedin: "",
-    imageSrc: "swasthik.jpg",
+    imageSrc: "jaison.png",
+  },
+
+  {
+    id: 4,
+    title: "Founder, Flashmates.Inc",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
+    speaker: "Amrth Shenava",
+    linkedin: "",
+    imageSrc: "amrth.png",
   },
 ];
 
 export default function Speakers() {
   return (
     <div className="flex justify-center pb-10 items-center w-full">
-      <div className="max-w-5xl my-20">
-        <h1 className="select-none text-center text-4xl md:text-5xl font-semibold md:pb-16 pb-10">
-          Speakers
+      <div className="max-w-5xl mb-20">
+        <h1 className="select-none text-center text-3xl md:text-4xl font-semibold md:pb-16 pb-10">
+          Speakers & Mentors
         </h1>
         <div className="grid md:grid-cols-2 gap-10">
           {cardData.map((card) => (

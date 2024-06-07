@@ -39,8 +39,8 @@ export default function Home() {
       </div>
       <Counter />
       <Schedule />
+      <Speakers />
       <Sponsors />
-      {/* <Speakers /> */}
       {/* <FAQ /> */}
       <Map />
     </main>
