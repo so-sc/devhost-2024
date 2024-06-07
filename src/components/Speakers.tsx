@@ -1,15 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
 
 interface CardData {
-  id: number;
-  title: string;
-  date: string;
-  description: string;
-  speaker: string;
-  linkedin: string;
-  imageSrc: string;
+  id: number
+  title: string
+  date: string
+  description: string
+  speaker: string
+  linkedin: string
+  imageSrc: string
 }
 
 const cardData: CardData[] = [
@@ -46,16 +46,16 @@ const cardData: CardData[] = [
     imageSrc: "shihab.png",
   },
 
-  {
-    id: 2,
-    title: "Engineer at Apple",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Deekshith Bellare, accomplished engineer at Apple, with 15+ years of experience in tech. Held key positions at Paytm and Robosoft. Expertise spans multiple engineering domains, known for innovative approach and dedication to excellence. Contributes to cutting-edge tech advancements at Apple.",
-    speaker: "Deekshith Bellare",
-    linkedin: "",
-    imageSrc: "deekshith_bellare.png",
-  },
+  // {
+  //   id: 2,
+  //   title: "Engineer at Apple",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Deekshith Bellare, accomplished engineer at Apple, with 15+ years of experience in tech. Held key positions at Paytm and Robosoft. Expertise spans multiple engineering domains, known for innovative approach and dedication to excellence. Contributes to cutting-edge tech advancements at Apple.",
+  //   speaker: "Deekshith Bellare",
+  //   linkedin: "",
+  //   imageSrc: "deekshith_bellare.png",
+  // },
 
   {
     id: 3,
@@ -63,55 +63,55 @@ const cardData: CardData[] = [
     date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Shasir Shetty, Chief Growth Officer at Niveus Solutions, driving expansion and strategic initiatives. Expertise in Diversity & Inclusion, Change Management, Management Consulting, HR Consulting, and HR. Fosters inclusive workplaces, guiding Niveus towards growth and innovation.",
-    speaker: "Shasir Shetty",
+    speaker: "Shashir Shetty",
     linkedin: "",
     imageSrc: "shasir_shetty.png",
   },
 
-  {
-    id: 4,
-    title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
-    speaker: "Sujith Kumar",
-    linkedin: "",
-    imageSrc: "sujith_kumar.png",
-  },
+  // {
+  //   id: 4,
+  //   title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
+  //   speaker: "Sujith Kumar",
+  //   linkedin: "",
+  //   imageSrc: "sujith_kumar.png",
+  // },
 
-  {
-    id: 5,
-    title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
-    speaker: "Krishna Prasad N Rao",
-    linkedin: "",
-    imageSrc: "krishna_prasad_n_rao.png",
-  },
+  // {
+  //   id: 5,
+  //   title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
+  //   speaker: "Krishna Prasad N Rao",
+  //   linkedin: "",
+  //   imageSrc: "krishna_prasad_n_rao.png",
+  // },
 
-  {
-    id: 4,
-    title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
-    speaker: "Jaison Dias",
-    linkedin: "",
-    imageSrc: "jaison.png",
-  },
+  // {
+  //   id: 4,
+  //   title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
+  //   speaker: "Jaison Dias",
+  //   linkedin: "",
+  //   imageSrc: "jaison.png",
+  // },
 
-  {
-    id: 4,
-    title: "Founder, Flashmates.Inc",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
-    speaker: "Amrth Shenava",
-    linkedin: "",
-    imageSrc: "amrth.png",
-  },
-];
+  // {
+  //   id: 4,
+  //   title: "Founder, Flashmates.Inc",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
+  //   speaker: "Amrth Shenava",
+  //   linkedin: "",
+  //   imageSrc: "amrth.png",
+  // },
+]
 
 export default function Speakers() {
   return (
@@ -173,5 +173,5 @@ export default function Speakers() {
         </div>
       </div>
     </div>
-  );
+  )
 }
