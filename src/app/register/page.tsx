@@ -239,7 +239,12 @@ export default function RegisterForm() {
                     </Button>
                   ) : (
                     <Button
-                      disabled={loading}
+                      disabled={
+                        loading ||
+                        event.clashes.some((clashIndex) =>
+                          selectedEvents.includes(clashIndex)
+                        )
+                      }
                       type="button"
                       onClick={() => {
                         setSelectedEvents([...selectedEvents, index]);

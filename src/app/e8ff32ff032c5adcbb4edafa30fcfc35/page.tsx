@@ -50,8 +50,8 @@ export default function Page() {
                 {JSON.stringify(combinedArray)}
               </div>
             </div> */}
-        <div className="p-5">
-          <h2 className="text-xl font-semibold mb-4">Event Counts</h2>
+        <div className="py-10">
+          <h2 className="text-2xl font-semibold mb-10">Event Counts</h2>
           <div className="flex flex-col gap-5">
             {EVENTS.map((event, index) => (
               <div
