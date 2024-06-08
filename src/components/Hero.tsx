@@ -4,6 +4,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -88,22 +89,49 @@ export default function Hero() {
             transition={{ duration: 0.1 }}
           >
             <div className="w-96 pt-5 md:w-auto md:max-w-3xl">
-              <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-20 md:pb-10 text-center">
+              <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-10 text-center">
                 14th - 16th June
               </h1>
             </div>
-            {/* <div className="pb-20 pt-5 md:pb-10">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="bg-background px-10 group flex items-center space-x-2"
+            <div className="flex md:flex-row flex-col gap-5 pb-20 md:pb-10 w-full">
+              <Link
+                href="https://unstop.com/o/8SGos2D?lb=ZReY3Op"
+                target="_blank"
+                className="md:px-0 px-5 flex mx-auto"
               >
-                <span>Register Now</span>
-                <span className="group-hover:text-primary">
-                  <ArrowRightIcon />
-                </span>
-              </HoverBorderGradient>
-            </div> */}
+                {/* <button className="p-[3px] md:w-60 w-full relative">
+                  <div className="absolute inset-0 bg-primary rounded-lg" />
+                  <div className="px-8 flex justify-center duration-300 items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
+                    <span>Hackathon</span>
+                    <span>
+                      <ArrowRightIcon />
+                    </span>
+                  </div>
+                </button> */}
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="bg-background md:w-80 w-80 px-10 group flex items-center justify-center space-x-2"
+                >
+                  <span>Register for Hackathon</span>
+                  <span className="group-hover:text-primary">
+                    <ArrowRightIcon />
+                  </span>
+                </HoverBorderGradient>
+              </Link>
+              {/* <Link href="/register" className="md:px-0 px-5 flex mx-auto">
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="bg-background md:w-60 w-80 px-10 group flex items-center justify-center space-x-2"
+                >
+                  <span>Events</span>
+                  <span className="group-hover:text-primary">
+                    <ArrowRightIcon />
+                  </span>
+                </HoverBorderGradient>
+              </Link> */}
+            </div>
           </motion.div>
         </AnimatePresence>
       </motion.div>

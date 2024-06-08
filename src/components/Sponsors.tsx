@@ -40,7 +40,7 @@ const Sponsors = () => {
               height={500}
             />
             <p className="text-center text-primary text-sm tracking-wide pt-4">
-              Unicourt
+              UniCourt Inc.
             </p>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Sponsors = () => {
               height={500}
             />
             <p className="text-center text-primary text-sm tracking-wide pt-4">
-              Pacewisdom
+              Pace Wisdom Solutions
             </p>
           </div>
         </div>

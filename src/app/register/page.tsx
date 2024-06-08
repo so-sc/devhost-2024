@@ -14,6 +14,7 @@ import {
 import { COLLEGES, EVENTS } from "@/lib/constants";
 import { useState } from "react";
 import { toast } from "sonner";
+import Link from "next/link";
 
 export default function RegisterForm() {
   const [name, setName] = useState("");
@@ -84,6 +85,9 @@ export default function RegisterForm() {
 
   return (
     <div className="max-w-2xl mx-auto">
+      <Link href="/" className="fixed top-0 left-0 md:p-10 p-5">
+        <Button>Go Back</Button>
+      </Link>
       <form className="space-y-6 p-5" onSubmit={handleSubmit}>
         <img
           className="w-full rounded-2xl"

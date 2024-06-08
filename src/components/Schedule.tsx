@@ -30,6 +30,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { PersonIcon } from "@radix-ui/react-icons";
+import { Badge } from "@/components/ui/badge";
 
 const scheduleData = [
   {
@@ -41,6 +42,7 @@ const scheduleData = [
         time: "9:00 am - 09:30 am",
         description: "",
         speaker: "",
+        type: "",
       },
       {
         icon: <GitCompareArrows />,
@@ -48,6 +50,7 @@ const scheduleData = [
         time: "10:00 am - 11:00 am",
         description: "Ground Floor Seminar Hall",
         speaker: "Suyog Shetty (Growth of Niveus)",
+        type: "Talk",
       },
       {
         icon: <LaptopIcon />,
@@ -56,6 +59,7 @@ const scheduleData = [
         time: "11:15 am - 12:15 pm",
         description: "Ground Floor Seminar Hall",
         speaker: "Nibraz Rehman",
+        type: "Talk",
       },
       {
         icon: <Users />,
@@ -63,6 +67,7 @@ const scheduleData = [
         time: "12:15 pm - 12:45 pm",
         description: "Open Area Lounge",
         speaker: "Discuss and Interact with the speakers and guests",
+        type: "",
       },
       {
         icon: <CookingPot />,
@@ -70,6 +75,7 @@ const scheduleData = [
         time: "12:45 pm - 01:45 pm",
         description: "",
         speaker: "",
+        type: "",
       },
       {
         icon: <Blocks />,
@@ -77,6 +83,7 @@ const scheduleData = [
         time: "01:45 pm - 04:00 pm",
         description: "Skill Lab - 2",
         speaker: "Subodh (Ethreal)",
+        type: "Master Class",
       },
 
       {
@@ -85,6 +92,7 @@ const scheduleData = [
         time: "04:00 pm - 05:00 pm",
         description: "Open Area Lounge",
         speaker: "Discuss and Interact with the speakers and guests",
+        type: "",
       },
     ],
   },
@@ -97,6 +105,7 @@ const scheduleData = [
         time: "09:30 am - 10:15 am",
         description: "",
         speaker: "To be revealed soon",
+        type: "Talk",
       },
       {
         icon: <Binary />,
@@ -104,14 +113,16 @@ const scheduleData = [
         time: "10:30 am - 11:15 am",
         description: "Ground Floor Seminar Hall",
         speaker: "Nikhil Raj",
+        type: "Talk",
       },
       {
         icon: <BrainCircuit />,
         title:
           "From Coastal Town to IT Hub: The Rise of Mangalore's IT Industry",
         time: "11:30 am - 12:00 am",
-        description: "",
+        description: "Ground Floor Seminar Hall",
         speaker: "Shashir Shetty (Mod), Shihab Kalander, John Fernandes",
+        type: "Panel Discussion",
       },
       // {
       //   icon: <Binary />,
@@ -119,6 +130,7 @@ const scheduleData = [
       //   time: "11:15 am - 12:00 pm",
       //   description: "",
       //   speaker: "To be revealed soon",
+      //   type: "",
       // },
       {
         icon: <Users />,
@@ -126,6 +138,7 @@ const scheduleData = [
         time: "12:15 pm - 12:45 pm",
         description: "Open Area Lounge",
         speaker: "Discuss and Interact with the speakers and guests",
+        type: "",
       },
       {
         icon: <Soup />,
@@ -133,6 +146,7 @@ const scheduleData = [
         time: "12:45 pm - 01:45 pm",
         description: "",
         speaker: "",
+        type: "",
       },
       {
         icon: <Brain />,
@@ -140,7 +154,8 @@ const scheduleData = [
           "Cracking the MAANG Code: What It Takes to Get Hired in Top IT Companies",
         time: "01:45 pm - 02:15 pm",
         description: "Ground Floor Seminar Hall",
-        speaker: "Nikhil Raj (mod), Prasanna, Balakrishnan (Remotely)",
+        speaker: "Nikhil Raj (mod), Prasanna, Balakrishnan",
+        type: "Panel Discussion",
       },
       {
         icon: <Workflow />,
@@ -148,6 +163,7 @@ const scheduleData = [
         time: "02:30 pm - 04:30 pm",
         description: "Skill Lab 1",
         speaker: "Mohit Tahiliani",
+        type: "Master Class",
       },
       {
         icon: <Laptop2 />,
@@ -155,6 +171,7 @@ const scheduleData = [
         time: "02:30 pm - 04:30 pm",
         description: "Skill Lab 2",
         speaker: "Akshay Kumar U",
+        type: "Master Class",
       },
       {
         icon: <Users />,
@@ -162,6 +179,7 @@ const scheduleData = [
         time: "04:30 pm - 05:00 pm",
         description: "Open Area Lounge",
         speaker: "Discuss and Interact with the speakers and guests",
+        type: "",
       },
       {
         icon: <SendToBack />,
@@ -169,6 +187,7 @@ const scheduleData = [
         time: "05:00 pm - 05:30 pm",
         description: "20 Teams to be participating offline in the Venue.",
         speaker: "Ground Floor Seminar Hall",
+        type: "",
       },
       {
         icon: <Bug />,
@@ -176,6 +195,7 @@ const scheduleData = [
         time: "06:00 pm",
         description: "",
         speaker: "",
+        type: "",
       },
       // {
       //   icon: <Utensils />,
@@ -183,6 +203,7 @@ const scheduleData = [
       //   time: "07:30 pm - 09:30 pm",
       //   description: "",
       //   speaker: "",
+      //   type: "",
       // },
       // {
       //   icon: <Users />,
@@ -190,6 +211,7 @@ const scheduleData = [
       //   time: "09:00 pm - 11:00 pm",
       //   description: "On their respective places",
       //   speaker: "",
+      //   type: "",
       // },
     ],
   },
@@ -202,6 +224,7 @@ const scheduleData = [
       //   time: "12:00 am - 04:00 am",
       //   description: "",
       //   speaker: "",
+      //   type: "",
       // },
       {
         icon: <BrainCircuit />,
@@ -209,6 +232,7 @@ const scheduleData = [
         time: "12:00 am - 04:00 am",
         description: "On their respective places",
         speaker: "Jaison Dias, Amrit Shenava",
+        type: "",
       },
       // {
       //   icon: <Cookie />,
@@ -216,6 +240,7 @@ const scheduleData = [
       //   time: "08:00 am - 10:00 am",
       //   description: "",
       //   speaker: "",
+      //   type: "",
       // },
       // {
       //   icon: <Users />,
@@ -223,6 +248,7 @@ const scheduleData = [
       //   time: "08:00 am - 12:00 pm",
       //   description: "On their respective places",
       //   speaker: "",
+      //   type: "",
       // },
       // {
       //   icon: <Code2 />,
@@ -230,6 +256,7 @@ const scheduleData = [
       //   time: "12:00 pm",
       //   description: "",
       //   speaker: "",
+      //   type: "",
       // },
       // {
       //   icon: <FerrisWheel />,
@@ -237,6 +264,7 @@ const scheduleData = [
       //   time: "12:00 pm - 02:00 pm",
       //   description: "",
       //   speaker: "Open Area Lounge",
+      //   type: "",
       // },
       // {
       //   icon: <Soup />,
@@ -244,12 +272,14 @@ const scheduleData = [
       //   time: "12:00 pm - 03:00 pm",
       //   description: "",
       //   speaker: "",
+      //   type: "",
       // },
       {
         icon: <Code2 />,
         title: "Hackathon Ends + Presentation",
         time: "02:00 pm - 04:00 pm",
         description: "Ground Floor Seminar Hall",
+        type: "",
       },
       {
         icon: <Laptop2 />,
@@ -257,6 +287,7 @@ const scheduleData = [
         time: "04:00 pm - 04:30 pm",
         description: "Ground Floor Seminar Hall",
         speaker: "",
+        type: "",
       },
       {
         icon: <PartyPopper />,
@@ -264,6 +295,7 @@ const scheduleData = [
         time: "04:30 pm - 05:00 pm",
         description: "",
         speaker: "May the prize be with you!",
+        type: "",
       },
     ],
   },
@@ -295,9 +327,12 @@ const Schedule = () => {
                       <span className="absolute flex items-center justify-center w-10 h-10 bg-background rounded-full -start-5 ring-8 ring-background">
                         {event.icon}
                       </span>
-                      <h3 className="flex items-center md:text-xl text-lg tracking-wider font-semibold">
-                        {event.title}
-                      </h3>
+                      <div className="flex mb-2 items-center md:text-xl text-lg tracking-wider font-semibold">
+                        <span>
+                          {event.title}{" "}
+                          {event.type && <Badge>{event.type}</Badge>}
+                        </span>
+                      </div>
                       <div className="mb-2 text-primary md:text-base text-sm tracking-wider">
                         {event.speaker}
                       </div>
