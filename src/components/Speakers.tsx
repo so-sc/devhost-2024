@@ -1,15 +1,15 @@
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 interface CardData {
-  id: number
-  title: string
-  date: string
-  description: string
-  speaker: string
-  linkedin: string
-  imageSrc: string
+  id: number;
+  title: string;
+  date: string;
+  description: string;
+  speaker: string;
+  linkedin: string;
+  imageSrc: string;
 }
 
 const cardData: CardData[] = [
@@ -111,7 +111,7 @@ const cardData: CardData[] = [
   //   linkedin: "",
   //   imageSrc: "amrth.png",
   // },
-]
+];
 
 export default function Speakers() {
   return (
@@ -173,5 +173,5 @@ export default function Speakers() {
         </div>
       </div>
     </div>
-  )
+  );
 }

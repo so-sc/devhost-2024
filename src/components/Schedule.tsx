@@ -189,7 +189,7 @@ const scheduleData = [
         title: "First round judging (3 +2) minutes",
         time: "09:00 pm - 11:00 pm",
         description: "On their respective places",
-        speaker: "Sujith Kumar, Krishna Prasad Rao",
+        speaker: "",
       },
     ],
   },
@@ -222,7 +222,7 @@ const scheduleData = [
         title: "Second round judging (7 +3) minutes",
         time: "08:00 am - 12:00 pm",
         description: "On their respective places",
-        speaker: "Sujith Kumar, Krishna Prasad Rao",
+        speaker: "",
       },
       {
         icon: <Code2 />,
@@ -256,7 +256,7 @@ const scheduleData = [
         title: "Keynote by Judges",
         time: "04:00 pm - 04:30 pm",
         description: "Ground Floor Seminar Hall",
-        speaker: "Sujith Kumar, Krishna Prasad Rao",
+        speaker: "",
       },
       {
         icon: <PartyPopper />,
