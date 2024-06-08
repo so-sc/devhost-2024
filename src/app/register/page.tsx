@@ -15,6 +15,7 @@ import { COLLEGES, EVENTS } from "@/lib/constants";
 import { useState } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function RegisterForm() {
   const [name, setName] = useState("");
@@ -84,10 +85,22 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <Link href="/" className="fixed top-0 left-0 md:p-10 p-5">
-        <Button>Go Back</Button>
-      </Link>
+    <div className="max-w-2xl mx-auto md:pt-5 pt-10">
+      <div className="fixed top-0 left-0 border-white/10 bg-background z-50 w-full p-5 py-7 border-b">
+        <div className="max-w-7xl mx-auto md:px-5">
+          <Link href="/">
+            <Image
+              priority
+              src="/logo_h.png"
+              alt="logo"
+              className="w-40 h-4"
+              width={500}
+              height={500}
+            />
+          </Link>
+        </div>
+      </div>
+
       <form className="space-y-6 p-5" onSubmit={handleSubmit}>
         <img
           className="w-full rounded-2xl"

@@ -88,6 +88,17 @@ const cardData: CardData[] = [
     imageSrc: "shihab.png",
   },
 
+  {
+    id: 1,
+    title: "Chief Architect (Enterprise), Niveus Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Sagar Vaidya is a seasoned cloud architect and DevOps engineer, with 17+ years of experience, specializing in designing and delivering high-performance cloud systems, proficient in GCP, AWS, NodeJS, Java, Python, and DevOps, with a passion for staying updated with the latest technologies and a proven track record of building scalable and secure solutions.",
+    speaker: "Sagar Vaidya",
+    linkedin: "",
+    imageSrc: "sagar.png",
+  },
+
   // {
   //   id: 2,
   //   title: "Engineer at Apple",

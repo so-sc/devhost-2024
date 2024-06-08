@@ -77,6 +77,16 @@ const scheduleData = [
         speaker: "",
         type: "",
       },
+
+      {
+        icon: <Computer />,
+        title: "DevOps Fundamentals: Building a Strong Foundation",
+        time: "01:45 pm - 04:00 pm",
+        description: "Skill Lab - 1",
+        speaker: "Sagar Vaidya",
+        type: "Master Class",
+      },
+
       {
         icon: <Blocks />,
         title: "Level Up Your Web3 Game using Smart Contracts",

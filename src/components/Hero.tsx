@@ -99,27 +99,18 @@ export default function Hero() {
                 target="_blank"
                 className="md:px-0 px-5 flex mx-auto"
               >
-                {/* <button className="p-[3px] md:w-60 w-full relative">
-                  <div className="absolute inset-0 bg-primary rounded-lg" />
-                  <div className="px-8 flex justify-center duration-300 items-center gap-2 py-2  bg-background rounded-[6px]  relative group transition text-white font-semibold tracking-wide hover:text-background hover:bg-transparent">
-                    <span>Hackathon</span>
-                    <span>
-                      <ArrowRightIcon />
-                    </span>
-                  </div>
-                </button> */}
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
-                  className="bg-background md:w-80 w-80 px-10 group flex items-center justify-center space-x-2"
+                  className="bg-background md:w-60 w-80 px-10 group flex items-center justify-center space-x-2"
                 >
-                  <span>Register for Hackathon</span>
+                  <span>Hackathon</span>
                   <span className="group-hover:text-primary">
                     <ArrowRightIcon />
                   </span>
                 </HoverBorderGradient>
               </Link>
-              {/* <Link href="/register" className="md:px-0 px-5 flex mx-auto">
+              <Link href="/register" className="md:px-0 px-5 flex mx-auto">
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
@@ -130,7 +121,7 @@ export default function Hero() {
                     <ArrowRightIcon />
                   </span>
                 </HoverBorderGradient>
-              </Link> */}
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>

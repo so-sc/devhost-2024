@@ -251,6 +251,15 @@ export const EVENTS = [
     seats: 60,
   },
   {
+    name: "DevOps Fundamentals: Building a Strong Foundation",
+    speaker: "Sagar Vaidya",
+    description: "Skill Lab - 1",
+    date: "14th June",
+    time: "01:45 pm",
+    type: "Master Class",
+    seats: 60,
+  },
+  {
     name: "Level Up Your Web3 Game using Smart Contracts",
     speaker: "Subodh (Ethreal)",
     description: "Skill Lab - 2",
