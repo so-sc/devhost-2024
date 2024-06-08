@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import Counter from "@/components/Counter"
-import CursorTrailCanvas from "@/components/CursorTrailCanvas"
-import FAQ from "@/components/Faq"
-import HackathonRegistration from "@/components/HackathonRegistration"
-import Hero from "@/components/Hero"
-import Map from "@/components/Map"
-import Schedule from "@/components/Schedule"
-import Speakers from "@/components/Speakers"
-import Sponsors from "@/components/Sponsors"
-import Image from "next/image"
+import Counter from "@/components/Counter";
+import CursorTrailCanvas from "@/components/CursorTrailCanvas";
+import FAQ from "@/components/Faq";
+import HackathonRegistration from "@/components/HackathonRegistration";
+import Hero from "@/components/Hero";
+import Map from "@/components/Map";
+import Schedule from "@/components/Schedule";
+import Speakers from "@/components/Speakers";
+import Sponsors from "@/components/Sponsors";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -39,10 +39,10 @@ export default function Home() {
       </div>
       <Counter />
       <Schedule />
-      {/* <Speakers /> */}
+      <Speakers />
       <Sponsors />
       {/* <FAQ /> */}
       <Map />
     </main>
-  )
+  );
 }

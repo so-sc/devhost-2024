@@ -90,27 +90,82 @@ const cardData: CardData[] = [
   //   imageSrc: "krishna_prasad_n_rao.png",
   // },
 
-  // {
-  //   id: 4,
-  //   title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
-  //   date: "24th, 02:00 pm - 03:30 pm",
-  //   description:
-  //     "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
-  //   speaker: "Jaison Dias",
-  //   linkedin: "",
-  //   imageSrc: "jaison.png",
-  // },
+  {
+    id: 4,
+    title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
+    speaker: "Jaison Dias",
+    linkedin: "",
+    imageSrc: "jaison.png",
+  },
 
-  // {
-  //   id: 4,
-  //   title: "Founder, Flashmates.Inc",
-  //   date: "24th, 02:00 pm - 03:30 pm",
-  //   description:
-  //     "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
-  //   speaker: "Amrth Shenava",
-  //   linkedin: "",
-  //   imageSrc: "amrth.png",
-  // },
+  {
+    id: 4,
+    title: "Founder, Flashmates.Inc",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
+    speaker: "Amrth Shenava",
+    linkedin: "",
+    imageSrc: "amrth.png",
+  },
+
+  {
+    id: 4,
+    title: "Founder, Abhyudaya Softech",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Akshay Kumar U is the founder of Abhyudaya Softech, focusing on transforming B2C brands with innovative tech solutions. He has expertise in developing e-commerce features and integrating music SDKs like Spotify and Apple Music. With a BE in Computer Science from Bangalore Institute of Technology and four years of experience in Flutter, Firebase, and Native Android, Akshay is an award-winning developer and active speaker at tech events.",
+    speaker: "Akshay Kumar U",
+    linkedin: "",
+    imageSrc: "akshay-kumar.png",
+  },
+
+  {
+    id: 4,
+    title: "Engineering Manager, UniCourt Inc.",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "John Fernandes is an Engineering Manager at UniCourt, specialising in legal data and analytics solutions. With a Bachelor of Engineering in Computer Science and over 7 years of software engineering experience, he leads a team of 20+ developers. John excels in building scalable APIs, optimising system performance, and delivering data-driven insights to enterprise clients. He is passionate about learning new technologies and staying updated with industry trends.",
+    speaker: "John Fernandes",
+    linkedin: "",
+    imageSrc: "john-f.png",
+  },
+
+  {
+    id: 4,
+    title: "DevOps Engineer, Pace Wisdom Solutions",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Nibraz Rehaman is a DevOps Engineer at Pace Wisdom Solutions with a strong passion for DevOps practices. He holds a Microsoft certification as an Azure Administrator Associate (az-104) and has expertise in AWS, Terraform, Ansible, CI/CD, Git, Grafana, Prometheus, and Sonarqube. Nibraz is dedicated to optimising and automating processes to enhance efficiency and reliability in software development and deployment.",
+    speaker: "Nibraz Rehaman",
+    linkedin: "",
+    imageSrc: "nibraz.png",
+  },
+
+  {
+    id: 4,
+    title: "Principal Program Manager - Cloud Networking, Azure Networking",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Ram Balakrishnan is the Principal Program Manager for Cloud Networking at Azure Networking. He is a strategic leader with hands-on network engineering expertise, known for fostering collaborative environments and achieving high-priority objectives. Ram has led global cloud network architecture initiatives, holds patents in intelligent routing algorithms, and authored a book on Advanced QoS for Multi-service IP/MPLS Networks.",
+    speaker: "Ram Balakrishnan",
+    linkedin: "",
+    imageSrc: "ram-b.png",
+  },
+
+  {
+    id: 4,
+    title: "Blockchain Developer, æ Labs",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Subodh I is a Blockchain Developer at æLabs, specialising in architecting robust systems with distributed ledger technologies. A contributor to Hyperledger Caliper, uPort, Quorum, and minor Ethereum projects on GitHub, Subhod emphasises going distributed if not decentralised. He is involved in blockchain research and development, cryptography, and exploring functional programming with Haskell.",
+    speaker: "Subodh I",
+    linkedin: "",
+    imageSrc: "subodh.png",
+  },
 ];
 
 export default function Speakers() {
