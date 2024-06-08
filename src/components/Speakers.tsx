@@ -25,6 +25,48 @@ const cardData: CardData[] = [
   },
 
   {
+    id: 4,
+    title: "Principal Program Manager - Cloud Networking, Azure Networking",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Ram Balakrishnan is the Principal Program Manager for Cloud Networking at Azure Networking. He is a strategic leader with hands-on network engineering expertise, known for fostering collaborative environments and achieving high-priority objectives. Ram has led global cloud network architecture initiatives, holds patents in intelligent routing algorithms, and authored a book on Advanced QoS for Multi-service IP/MPLS Networks.",
+    speaker: "Ram Balakrishnan",
+    linkedin: "",
+    imageSrc: "ram-b.png",
+  },
+
+  {
+    id: 4,
+    title: "Lead, Big Data Center of Excellence, TCS BFSI",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description: "",
+    speaker: "Prasanna",
+    linkedin: "",
+    imageSrc: "prasanna.png",
+  },
+
+  {
+    id: 4,
+    title: "Former Head of Talent Management, TCS Europe",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description: "",
+    speaker: "Nikhil Raj",
+    linkedin: "",
+    imageSrc: "nikhil-raj.png",
+  },
+
+  {
+    id: 4,
+    title: "Blockchain Developer, æ Labs",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Subodh I is a Blockchain Developer at æLabs, specialising in architecting robust systems with distributed ledger technologies. A contributor to Hyperledger Caliper, uPort, Quorum, and minor Ethereum projects on GitHub, Subhod emphasises going distributed if not decentralised. He is involved in blockchain research and development, cryptography, and exploring functional programming with Haskell.",
+    speaker: "Subodh I",
+    linkedin: "",
+    imageSrc: "subodh.png",
+  },
+
+  {
     id: 1,
     title: "Associate Professor, NITK Surathkal",
     date: "24th, 02:00 pm - 03:30 pm",
@@ -92,28 +134,6 @@ const cardData: CardData[] = [
 
   {
     id: 4,
-    title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
-    speaker: "Jaison Dias",
-    linkedin: "",
-    imageSrc: "jaison.png",
-  },
-
-  {
-    id: 4,
-    title: "Founder, Flashmates.Inc",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description:
-      "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
-    speaker: "Amrth Shenava",
-    linkedin: "",
-    imageSrc: "amrth.png",
-  },
-
-  {
-    id: 4,
     title: "Founder, Abhyudaya Softech",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -147,24 +167,24 @@ const cardData: CardData[] = [
 
   {
     id: 4,
-    title: "Principal Program Manager - Cloud Networking, Azure Networking",
+    title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Ram Balakrishnan is the Principal Program Manager for Cloud Networking at Azure Networking. He is a strategic leader with hands-on network engineering expertise, known for fostering collaborative environments and achieving high-priority objectives. Ram has led global cloud network architecture initiatives, holds patents in intelligent routing algorithms, and authored a book on Advanced QoS for Multi-service IP/MPLS Networks.",
-    speaker: "Ram Balakrishnan",
+      "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
+    speaker: "Jaison Dias",
     linkedin: "",
-    imageSrc: "ram-b.png",
+    imageSrc: "jaison.png",
   },
 
   {
     id: 4,
-    title: "Blockchain Developer, æ Labs",
+    title: "Founder, Flashmates.Inc",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
-      "Subodh I is a Blockchain Developer at æLabs, specialising in architecting robust systems with distributed ledger technologies. A contributor to Hyperledger Caliper, uPort, Quorum, and minor Ethereum projects on GitHub, Subhod emphasises going distributed if not decentralised. He is involved in blockchain research and development, cryptography, and exploring functional programming with Haskell.",
-    speaker: "Subodh I",
+      "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
+    speaker: "Amrth Shenava",
     linkedin: "",
-    imageSrc: "subodh.png",
+    imageSrc: "amrth.png",
   },
 ];
 
