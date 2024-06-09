@@ -46,7 +46,8 @@ const scheduleData = [
       },
       {
         icon: <GitCompareArrows />,
-        title: "Learn from My Mistakes: CEO Lessons Learned",
+        title:
+          "From Passion to Profit: Niveus' Journey from Startup to Scalability",
         time: "10:00 am - 11:00 am",
         description: "Ground Floor Seminar Hall",
         speaker: "Suyog Shetty",
@@ -164,7 +165,7 @@ const scheduleData = [
           "Cracking the MAANG Code: What It Takes to Get Hired in Top IT Companies",
         time: "01:45 pm - 02:15 pm",
         description: "Ground Floor Seminar Hall",
-        speaker: "Nikhil Raj, Prasanna, Balakrishnan",
+        speaker: "Nikhil Raj, Prasanna, Ram Balakrishnan",
         type: "Panel Discussion",
       },
       {

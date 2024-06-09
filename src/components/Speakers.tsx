@@ -25,8 +25,8 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
-    title: "Principal Program Manager - Cloud Networking, Azure Networking",
+    id: 2,
+    title: "Principal Program Manager, Azure Microsoft, Seattle",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Ram Balakrishnan is the Principal Program Manager for Cloud Networking at Azure Networking. He is a strategic leader with hands-on network engineering expertise, known for fostering collaborative environments and achieving high-priority objectives. Ram has led global cloud network architecture initiatives, holds patents in intelligent routing algorithms, and authored a book on Advanced QoS for Multi-service IP/MPLS Networks.",
@@ -36,7 +36,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Lead, Big Data Center of Excellence, TCS BFSI",
     date: "24th, 02:00 pm - 03:30 pm",
     description: "",
@@ -56,7 +56,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Blockchain Developer, æ Labs",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -67,7 +67,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 1,
+    id: 6,
     title: "Associate Professor, NITK Surathkal",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -78,7 +78,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 1,
+    id: 7,
     title: "Co-Founder & CCO, Novigo Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -89,7 +89,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 1,
+    id: 8,
     title: "Chief Architect (Enterprise), Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -99,19 +99,8 @@ const cardData: CardData[] = [
     imageSrc: "sagar.png",
   },
 
-  // {
-  //   id: 2,
-  //   title: "Engineer at Apple",
-  //   date: "24th, 02:00 pm - 03:30 pm",
-  //   description:
-  //     "Deekshith Bellare, accomplished engineer at Apple, with 15+ years of experience in tech. Held key positions at Paytm and Robosoft. Expertise spans multiple engineering domains, known for innovative approach and dedication to excellence. Contributes to cutting-edge tech advancements at Apple.",
-  //   speaker: "Deekshith Bellare",
-  //   linkedin: "",
-  //   imageSrc: "deekshith_bellare.png",
-  // },
-
   {
-    id: 3,
+    id: 9,
     title: "Chief Growth Officer, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -121,30 +110,8 @@ const cardData: CardData[] = [
     imageSrc: "shasir_shetty.png",
   },
 
-  // {
-  //   id: 4,
-  //   title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
-  //   date: "24th, 02:00 pm - 03:30 pm",
-  //   description:
-  //     "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
-  //   speaker: "Sujith Kumar",
-  //   linkedin: "",
-  //   imageSrc: "sujith_kumar.png",
-  // },
-
-  // {
-  //   id: 5,
-  //   title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
-  //   date: "24th, 02:00 pm - 03:30 pm",
-  //   description:
-  //     "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
-  //   speaker: "Krishna Prasad N Rao",
-  //   linkedin: "",
-  //   imageSrc: "krishna_prasad_n_rao.png",
-  // },
-
   {
-    id: 4,
+    id: 10,
     title: "Founder, Abhyudaya Softech",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -155,7 +122,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 11,
     title: "Engineering Manager, UniCourt Inc.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -166,7 +133,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 12,
     title: "DevOps Engineer, Pace Wisdom Solutions",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -177,7 +144,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 13,
     title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -188,7 +155,7 @@ const cardData: CardData[] = [
   },
 
   {
-    id: 4,
+    id: 14,
     title: "Founder, Flashmates.Inc",
     date: "24th, 02:00 pm - 03:30 pm",
     description:
@@ -197,25 +164,40 @@ const cardData: CardData[] = [
     linkedin: "",
     imageSrc: "amrth.png",
   },
+
+  // {
+  //   id: 15,
+  //   title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
+  //   speaker: "Sujith Kumar",
+  //   linkedin: "",
+  //   imageSrc: "sujith_kumar.png",
+  // },
+
+  // {
+  //   id: 16,
+  //   title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
+  //   date: "24th, 02:00 pm - 03:30 pm",
+  //   description:
+  //     "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
+  //   speaker: "Krishna Prasad N Rao",
+  //   linkedin: "",
+  //   imageSrc: "krishna_prasad_n_rao.png",
+  // },
 ];
 
 export default function Speakers() {
   return (
     <div className="flex justify-center pb-10 items-center w-full">
-      <div className="max-w-5xl mb-20">
+      <div className="max-w-6xl mb-20">
         <h1 className="select-none text-center text-3xl md:text-4xl font-semibold md:pb-16 pb-10">
           Speakers & Mentors
         </h1>
         <div className="grid md:grid-cols-2 gap-10">
           {cardData.map((card) => (
             <div key={card.id} className="md:relative flex flex-col">
-              {/* <Image
-                className="z-10 md:mt-0 mt-32 rotate-90 md:rotate-0 right-3 md:left-0 absolute w-32"
-                src="/smth.svg"
-                alt="logo"
-                width={500}
-                height={500}
-              ></Image> */}
               <Image
                 className="bg-background md:ml-0 ml-5 border shadow-sm border-white/10 rounded-md z-10 md:flex hidden absolute w-40 h-40 aspect-square"
                 src={`/speakers/${card.imageSrc}`}

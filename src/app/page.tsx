@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="max-w-6xl px-5 mx-auto">
+      <div className="max-w-7xl px-5 mx-auto">
         <CursorTrailCanvas className="pointer-events-none z-50 md:flex hidden fixed inset-0 h-full w-full" />
         <Hero />
         {/* <HackathonRegistration /> */}
@@ -53,11 +53,13 @@ export default function Home() {
             className="object-right lg:w-[53rem] lg:h-[53rem] md:w-[40rem] md:h-[40rem] w-[30rem] h-[30rem] md:mt-96 sm:mt-[30rem] mt-[40rem] object-cover"
           ></Image>
         </div>
-        <div className="max-w-6xl relative px-5 mx-auto">
+        <div className="max-w-7xl relative px-5 mx-auto">
           <Sponsors />
-          {/* <FAQ /> */}
-          <Map />
         </div>
+      </div>
+      <div className="max-w-7xl relative px-5 mx-auto">
+        <Map />
+        {/* <FAQ /> */}
       </div>
     </div>
   );

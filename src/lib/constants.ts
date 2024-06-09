@@ -233,7 +233,7 @@ export const COLLEGES = [
 
 export const EVENTS = [
   {
-    name: "Learn from My Mistakes: CEO Lessons Learned",
+    name: "From Passion to Profit: Niveus' Journey from Startup to Scalability",
     speaker: "Suyog Shetty (Growth of Niveus)",
     description: "Ground Floor Seminar Hall",
     date: "14th June",
