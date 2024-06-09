@@ -49,7 +49,7 @@ const scheduleData = [
         title: "Learn from My Mistakes: CEO Lessons Learned",
         time: "10:00 am - 11:00 am",
         description: "Ground Floor Seminar Hall",
-        speaker: "Suyog Shetty (Growth of Niveus)",
+        speaker: "Suyog Shetty",
         type: "Talk",
       },
       {
@@ -92,7 +92,7 @@ const scheduleData = [
         title: "Level Up Your Web3 Game using Smart Contracts",
         time: "01:45 pm - 04:00 pm",
         description: "Skill Lab - 2",
-        speaker: "Subodh (Ethreal)",
+        speaker: "Subodh",
         type: "Master Class",
       },
 
@@ -131,7 +131,7 @@ const scheduleData = [
           "From Coastal Town to IT Hub: The Rise of Mangalore's IT Industry",
         time: "11:30 am - 12:00 am",
         description: "Ground Floor Seminar Hall",
-        speaker: "Shashir Shetty (Mod), Shihab Kalander, John Fernandes",
+        speaker: "Shashir Shetty, Shihab Kalander, John Fernandes",
         type: "Panel Discussion",
       },
       // {
@@ -164,7 +164,7 @@ const scheduleData = [
           "Cracking the MAANG Code: What It Takes to Get Hired in Top IT Companies",
         time: "01:45 pm - 02:15 pm",
         description: "Ground Floor Seminar Hall",
-        speaker: "Nikhil Raj (mod), Prasanna, Balakrishnan",
+        speaker: "Nikhil Raj, Prasanna, Balakrishnan",
         type: "Panel Discussion",
       },
       {
@@ -209,7 +209,7 @@ const scheduleData = [
       },
       // {
       //   icon: <Utensils />,
-      //   title: "Dinner Window (by us)",
+      //   title: "Dinner Window",
       //   time: "07:30 pm - 09:30 pm",
       //   description: "",
       //   speaker: "",
@@ -217,7 +217,7 @@ const scheduleData = [
       // },
       // {
       //   icon: <Users />,
-      //   title: "First round judging (3 +2) minutes",
+      //   title: "First round judging",
       //   time: "09:00 pm - 11:00 pm",
       //   description: "On their respective places",
       //   speaker: "",
@@ -230,7 +230,7 @@ const scheduleData = [
     events: [
       // {
       //   icon: <Sandwich />,
-      //   title: "Midnight Snacks (by us)",
+      //   title: "Midnight Snacks",
       //   time: "12:00 am - 04:00 am",
       //   description: "",
       //   speaker: "",
@@ -246,7 +246,7 @@ const scheduleData = [
       },
       // {
       //   icon: <Cookie />,
-      //   title: "Breakfast Window (not by us)",
+      //   title: "Breakfast Window",
       //   time: "08:00 am - 10:00 am",
       //   description: "",
       //   speaker: "",
@@ -254,7 +254,7 @@ const scheduleData = [
       // },
       // {
       //   icon: <Users />,
-      //   title: "Second round judging (7 +3) minutes",
+      //   title: "Second round judging",
       //   time: "08:00 am - 12:00 pm",
       //   description: "On their respective places",
       //   speaker: "",
@@ -270,7 +270,7 @@ const scheduleData = [
       // },
       // {
       //   icon: <FerrisWheel />,
-      //   title: "Quizzes and Fun activities (not selected teams)",
+      //   title: "Quizzes and Fun activities",
       //   time: "12:00 pm - 02:00 pm",
       //   description: "",
       //   speaker: "Open Area Lounge",
@@ -278,7 +278,7 @@ const scheduleData = [
       // },
       // {
       //   icon: <Soup />,
-      //   title: "Lunch Window (not by us)",
+      //   title: "Lunch Window",
       //   time: "12:00 pm - 03:00 pm",
       //   description: "",
       //   speaker: "",
