@@ -12,7 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { COLLEGES, EVENTS } from "@/lib/constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,6 +26,36 @@ export default function RegisterForm() {
   const [year, setYear] = useState("");
   const [loading, setLoading] = useState(false);
   const [selectedEvents, setSelectedEvents] = useState<number[]>([]);
+  const [eventCounts, setEventCounts] = useState<number[]>(
+    new Array(EVENTS.length).fill(0)
+  );
+
+  const supabase = createClient();
+
+  useEffect(() => {
+    const fetchEventCounts = async () => {
+      const { data, error } = await supabase
+        .from("registrations")
+        .select("events");
+
+      if (error) {
+        console.error("Error fetching event counts:", error);
+        return;
+      }
+
+      const counts = new Array(EVENTS.length).fill(0);
+      data.forEach((registration) => {
+        const events = JSON.parse(registration.events);
+        events.forEach((event: any) => {
+          counts[event] += 1;
+        });
+      });
+
+      setEventCounts(counts);
+    };
+
+    fetchEventCounts();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,9 +79,17 @@ export default function RegisterForm() {
       return;
     }
 
-    setLoading(true);
+    // Check if any selected event has reached its seat limit
+    for (const eventIndex of selectedEvents) {
+      if (eventCounts[eventIndex] >= EVENTS[eventIndex].seats) {
+        toast.error(
+          `Registration for "${EVENTS[eventIndex].name}" is full. Please select another event.`
+        );
+        return;
+      }
+    }
 
-    const supabase = createClient();
+    setLoading(true);
 
     const { data, error } = await supabase.from("registrations").insert([
       {
@@ -81,6 +119,11 @@ export default function RegisterForm() {
       setBranch("");
       setYear("");
       setSelectedEvents([]);
+      const newEventCounts = [...eventCounts];
+      selectedEvents.forEach((eventIndex) => {
+        newEventCounts[eventIndex] += 1;
+      });
+      setEventCounts(newEventCounts);
     }
   };
 
@@ -222,6 +265,7 @@ export default function RegisterForm() {
                       <p>Speaker: {event.speaker}</p>
                       <p>Date: {event.date}</p>
                       <p>Time: {event.time}</p>
+                      <p>Available Seats: {event.seats - eventCounts[index]}</p>
                     </div>
                   </div>
                   {selectedEvents.includes(index) ? (
@@ -241,6 +285,7 @@ export default function RegisterForm() {
                     <Button
                       disabled={
                         loading ||
+                        eventCounts[index] >= event.seats ||
                         event.clashes.some((clashIndex) =>
                           selectedEvents.includes(clashIndex)
                         )

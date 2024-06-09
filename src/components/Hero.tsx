@@ -94,7 +94,7 @@ export default function Hero() {
               </h1>
             </div>
             <div className="flex md:flex-row flex-col gap-5 pb-20 md:pb-10 w-full">
-              <Link
+              {/* <Link
                 href="https://unstop.com/o/8SGos2D?lb=ZReY3Op"
                 target="_blank"
                 className="md:px-0 px-5 flex mx-auto"
@@ -109,14 +109,14 @@ export default function Hero() {
                     <ArrowRightIcon />
                   </span>
                 </HoverBorderGradient>
-              </Link>
+              </Link> */}
               <Link href="/register" className="md:px-0 px-5 flex mx-auto">
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
-                  className="bg-background md:w-60 w-80 px-10 group flex items-center justify-center space-x-2"
+                  className="bg-background w-80 px-10 group flex items-center justify-center space-x-2"
                 >
-                  <span>Events</span>
+                  <span>Register for Events</span>
                   <span className="group-hover:text-primary">
                     <ArrowRightIcon />
                   </span>

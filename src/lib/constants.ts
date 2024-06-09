@@ -260,7 +260,7 @@ export const EVENTS = [
     time: "01:45 pm",
     clashes: [3],
     type: "Master Class",
-    seats: 60,
+    seats: 80,
   },
   {
     name: "Level Up Your Web3 Game using Smart Contracts",
@@ -270,7 +270,7 @@ export const EVENTS = [
     time: "01:45 pm",
     clashes: [2],
     type: "Master Class",
-    seats: 60,
+    seats: 80,
   },
   {
     name: "Something Interesting 👀",
@@ -321,7 +321,7 @@ export const EVENTS = [
     time: "02:30 pm",
     clashes: [9],
     type: "Master Class",
-    seats: 60,
+    seats: 80,
   },
   {
     name: "GEN AI for Dummies: A Beginner's Guide to LLMS",
@@ -331,6 +331,6 @@ export const EVENTS = [
     time: "02:30 pm",
     clashes: [8],
     type: "Master Class",
-    seats: 60,
+    seats: 80,
   },
 ];
