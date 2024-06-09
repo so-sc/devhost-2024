@@ -234,7 +234,7 @@ export const COLLEGES = [
 export const EVENTS = [
   {
     name: "From Passion to Profit: Niveus' Journey from Startup to Scalability",
-    speaker: "Suyog Shetty (Growth of Niveus)",
+    speaker: "Suyog Shetty",
     description: "Ground Floor Seminar Hall",
     date: "14th June",
     time: "10:00 am",
@@ -264,7 +264,7 @@ export const EVENTS = [
   },
   {
     name: "Level Up Your Web3 Game using Smart Contracts",
-    speaker: "Subodh (Ethreal)",
+    speaker: "Subodh",
     description: "Skill Lab - 2",
     date: "14th June",
     time: "01:45 pm",
@@ -295,7 +295,7 @@ export const EVENTS = [
   },
   {
     name: "From Coastal Town to IT Hub: The Rise of Mangalore's IT Industry",
-    speaker: "Shashir Shetty (Mod), Shihab Kalander, John Fernandes",
+    speaker: "Shashir Shetty, Shihab Kalander, John Fernandes",
     description: "Ground Floor Seminar Hall",
     date: "15th June",
     time: "11:30 am",
@@ -305,7 +305,7 @@ export const EVENTS = [
   },
   {
     name: "Cracking the MAANG Code: What It Takes to Get Hired in Top IT Companies",
-    speaker: "Nikhil Raj (mod), Prasanna, Balakrishnan",
+    speaker: "Nikhil Raj, Prasanna, Balakrishnan",
     description: "Ground Floor Seminar Hall",
     date: "15th June",
     time: "01:45 pm",
