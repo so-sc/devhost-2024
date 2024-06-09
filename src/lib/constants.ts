@@ -125,6 +125,7 @@ export const COLLEGES = [
   "Kalpataru Institute of Technology, Tiptur",
   "Karavali Institute, of Technology, Neermarga, Mangalore",
   "KCT Engineering College, Gulbarga (Religious Minority) (MUSLIM)",
+  "Manipal Institute of Technology, Manipal",
   "Nadgir Institute of Engineering and Technology, Jindal Nagar, Bangalore (2016-17)",
   "Nagarjuna College of Engineering. & Technology, Bangalore Rural Dist",
   "National Institute of Engineering (Evening), Mysore",
@@ -136,6 +137,8 @@ export const COLLEGES = [
   "Nitte Institute of Architecture, Bangalore (2016-17)",
   "NITTE Institute of Architecture, Nitte University, Mangalore",
   "Nitte Meenakshi Institute of Technology, Bangalore",
+  "National Institute of Technology Karnataka, Surathkal",
+  "N.M.A.M. Institute of Technology, Nitte",
   "P E S University (Electronic City Campus), Bangalore",
   "P E S University (Formerly PESIT), Bangalore",
   "P.A. College of Engineering, Kairangal, Bantwala",
@@ -229,7 +232,7 @@ export const COLLEGES = [
   "Wadiyar Centre For Architecture (Formerly CFA), Mysuru",
   "Yellamma Dasappa Institute of Technology, Raghuvanahalli, Kanakapura Main Road, Bangalore",
   "Yenepoya Institute Of Technology (Formerly Dr. MVSIT), Moodabidre, Mangalore (Tq)",
-];
+]
 
 export const EVENTS = [
   {
@@ -333,4 +336,4 @@ export const EVENTS = [
     type: "Master Class",
     seats: 80,
   },
-];
+]
