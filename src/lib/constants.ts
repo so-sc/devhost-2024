@@ -136,6 +136,7 @@ export const COLLEGES = [
   "Nitte Institute of Architecture, Bangalore (2016-17)",
   "NITTE Institute of Architecture, Nitte University, Mangalore",
   "Nitte Meenakshi Institute of Technology, Bangalore",
+  "N.M.A.M. Institute of Technology, Nitte",
   "P E S University (Electronic City Campus), Bangalore",
   "P E S University (Formerly PESIT), Bangalore",
   "P.A. College of Engineering, Kairangal, Bantwala",
