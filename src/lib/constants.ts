@@ -232,7 +232,7 @@ export const COLLEGES = [
   "Wadiyar Centre For Architecture (Formerly CFA), Mysuru",
   "Yellamma Dasappa Institute of Technology, Raghuvanahalli, Kanakapura Main Road, Bangalore",
   "Yenepoya Institute Of Technology (Formerly Dr. MVSIT), Moodabidre, Mangalore (Tq)",
-]
+];
 
 export const EVENTS = [
   {
@@ -243,7 +243,7 @@ export const EVENTS = [
     time: "10:00 am",
     clashes: [],
     type: "Talk",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "The Multiverse of OS: A Deep Dive into Dual Boot, VMs, and Containers",
@@ -253,7 +253,7 @@ export const EVENTS = [
     time: "11:15 am",
     clashes: [],
     type: "Talk",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "DevOps Fundamentals: Building a Strong Foundation",
@@ -284,7 +284,7 @@ export const EVENTS = [
     time: "09:30 am",
     clashes: [],
     type: "Talk",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "Unlock Your Earning Potential: From Engineering to Corporate",
@@ -294,7 +294,7 @@ export const EVENTS = [
     time: "10:30 am",
     clashes: [],
     type: "Talk",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "From Coastal Town to IT Hub: The Rise of Mangalore's IT Industry",
@@ -304,7 +304,7 @@ export const EVENTS = [
     time: "11:30 am",
     clashes: [],
     type: "Panel Discussion",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "Cracking the MAANG Code: What It Takes to Get Hired in Top IT Companies",
@@ -314,7 +314,7 @@ export const EVENTS = [
     time: "01:45 pm",
     clashes: [],
     type: "Panel Discussion",
-    seats: 60,
+    seats: 200,
   },
   {
     name: "10X Your API Productivity: Mastering APIs using Postman",
@@ -336,4 +336,4 @@ export const EVENTS = [
     type: "Master Class",
     seats: 80,
   },
-]
+];

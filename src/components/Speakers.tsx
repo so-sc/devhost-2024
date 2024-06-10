@@ -37,22 +37,23 @@ const cardData: CardData[] = [
 
   {
     id: 3,
+    title: "Former Head of Talent Management, TCS Europe",
+    date: "24th, 02:00 pm - 03:30 pm",
+    description:
+      "Nikhil Raj is a seasoned professional with 25+ years of experience in talent supply chain management, workforce operations, and technical consulting, having held multiple leadership roles at TCS and founding PY Head Hunting, a staffing firm for startups.",
+    speaker: "Nikhil Raj",
+    linkedin: "",
+    imageSrc: "nikhil-raj.png",
+  },
+
+  {
+    id: 4,
     title: "Lead, Big Data Center of Excellence, TCS BFSI",
     date: "24th, 02:00 pm - 03:30 pm",
     description: "",
     speaker: "Prasanna",
     linkedin: "",
     imageSrc: "prasanna.png",
-  },
-
-  {
-    id: 4,
-    title: "Former Head of Talent Management, TCS Europe",
-    date: "24th, 02:00 pm - 03:30 pm",
-    description: "",
-    speaker: "Nikhil Raj",
-    linkedin: "",
-    imageSrc: "nikhil-raj.png",
   },
 
   {
