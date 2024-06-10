@@ -173,7 +173,7 @@ const scheduleData = [
         title: "10X Your API Productivity: Mastering APIs using Postman",
         time: "02:30 pm - 04:30 pm",
         description: "Skill Lab 1",
-        speaker: "Mohit Tahiliani",
+        speaker: "Mohit P. Tahiliani",
         type: "Master Class",
       },
       {
