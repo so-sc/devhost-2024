@@ -5,7 +5,6 @@ import React from "react";
 interface CardData {
   id: number;
   title: string;
-  date: string;
   description: string;
   speaker: string;
   linkedin: string;
@@ -16,7 +15,6 @@ const cardData: CardData[] = [
   {
     id: 1,
     title: "Chief Executive Officer at Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Suyog Shetty, Co-founder & CEO at Niveus Solutions, a distinguished Google Cloud consulting company. 15+ years of experience in IT consulting, with expertise in cloud technologies, video broadcasting, and digital transformation. Formerly at Infosys and Wipro. 3-time winner of Google Cloud's Cloud Partner of the Year award.",
     speaker: "Suyog Shetty",
@@ -27,7 +25,6 @@ const cardData: CardData[] = [
   {
     id: 2,
     title: "Principal Program Manager, Azure Microsoft, Seattle",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Ram Balakrishnan is the Principal Program Manager for Cloud Networking at Azure Networking. He is a strategic leader with hands-on network engineering expertise, known for fostering collaborative environments and achieving high-priority objectives. Ram has led global cloud network architecture initiatives, holds patents in intelligent routing algorithms, and authored a book on Advanced QoS for Multi-service IP/MPLS Networks.",
     speaker: "Ram Balakrishnan",
@@ -38,7 +35,6 @@ const cardData: CardData[] = [
   {
     id: 3,
     title: "Former Head of Talent Management, TCS Europe",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Nikhil Raj is a seasoned professional with 25+ years of experience in talent supply chain management, workforce operations, and technical consulting, having held multiple leadership roles at TCS and founding PY Head Hunting, a staffing firm for startups.",
     speaker: "Nikhil Raj",
@@ -49,7 +45,6 @@ const cardData: CardData[] = [
   {
     id: 4,
     title: "Lead, Big Data Center of Excellence, TCS BFSI",
-    date: "24th, 02:00 pm - 03:30 pm",
     description: "",
     speaker: "Prasanna",
     linkedin: "",
@@ -59,7 +54,6 @@ const cardData: CardData[] = [
   {
     id: 5,
     title: "Blockchain Developer, æ Labs",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Subodh I is a Blockchain Developer at æLabs, specialising in architecting robust systems with distributed ledger technologies. A contributor to Hyperledger Caliper, uPort, Quorum, and minor Ethereum projects on GitHub, Subhod emphasises going distributed if not decentralised. He is involved in blockchain research and development, cryptography, and exploring functional programming with Haskell.",
     speaker: "Subodh I",
@@ -70,7 +64,6 @@ const cardData: CardData[] = [
   {
     id: 6,
     title: "Associate Professor, NITK Surathkal",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Mohit P. Tahiliani, Associate Professor at NITK Surathkal, specialises in Internet Traffic Engineering, focusing on TCP optimizations and Linux queue disciplines. He contributes to open source, co-maintaining TCP modules in ns-3 and contributing 'FQ-PIE' to the Linux kernel v5.6. Mohit holds leadership roles in IEEE Mangalore Subsection, ns-3 consortium, and the India Internet Engineering Society.",
     speaker: "Mohit P. Tahiliani",
@@ -81,7 +74,6 @@ const cardData: CardData[] = [
   {
     id: 7,
     title: "Co-Founder & CCO, Novigo Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Shihab Kalandar is the Co-Founder and Chief Commercial Officer at Novigo Solutions Pvt. Ltd. With over 15 years of experience in Sales & Marketing across the Middle East and North America, he leads the Business Development and Client Relations Team. Shihab started his career at Accenture and TCS, bringing expertise in IT solutions, customer relationship management, and strategic growth to Novigo.",
     speaker: "Shihab Kalandar",
@@ -92,7 +84,6 @@ const cardData: CardData[] = [
   {
     id: 8,
     title: "Chief Architect (Enterprise), Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Sagar Vaidya is a seasoned cloud architect and DevOps engineer, with 17+ years of experience, specializing in designing and delivering high-performance cloud systems, proficient in GCP, AWS, NodeJS, Java, Python, and DevOps, with a passion for staying updated with the latest technologies and a proven track record of building scalable and secure solutions.",
     speaker: "Sagar Vaidya",
@@ -103,7 +94,6 @@ const cardData: CardData[] = [
   {
     id: 9,
     title: "Chief Growth Officer, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Shasir Shetty, Chief Growth Officer at Niveus Solutions, driving expansion and strategic initiatives. Expertise in Diversity & Inclusion, Change Management, Management Consulting, HR Consulting, and HR. Fosters inclusive workplaces, guiding Niveus towards growth and innovation.",
     speaker: "Shashir Shetty",
@@ -114,7 +104,6 @@ const cardData: CardData[] = [
   {
     id: 10,
     title: "Founder, Abhyudaya Softech",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Akshay Kumar U is the founder of Abhyudaya Softech, focusing on transforming B2C brands with innovative tech solutions. He has expertise in developing e-commerce features and integrating music SDKs like Spotify and Apple Music. With a BE in Computer Science from Bangalore Institute of Technology and four years of experience in Flutter, Firebase, and Native Android, Akshay is an award-winning developer and active speaker at tech events.",
     speaker: "Akshay Kumar U",
@@ -124,8 +113,34 @@ const cardData: CardData[] = [
 
   {
     id: 11,
+    title: "Cloud Specialist - DevOps, Niveus Solutions Pvt. Ltd.",
+    description: "",
+    speaker: "Roshan Y",
+    linkedin: "",
+    imageSrc: "rohan.jpg",
+  },
+
+  {
+    id: 12,
+    title: "Cloud Engineer - DevOps, Niveus Solutions Pvt. Ltd.",
+    description: "",
+    speaker: "Pruthvija Shetty",
+    linkedin: "",
+    imageSrc: "pruthvija.jpg",
+  },
+
+  {
+    id: 11,
+    title: "Cloud Leader - Architecture, Niveus Solutions Pvt. Ltd.",
+    description: "",
+    speaker: "Rajesh Nayak",
+    linkedin: "",
+    imageSrc: "rajesh.jpg",
+  },
+
+  {
+    id: 11,
     title: "Engineering Manager, UniCourt Inc.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "John Fernandes is an Engineering Manager at UniCourt, specialising in legal data and analytics solutions. With a Bachelor of Engineering in Computer Science and over 7 years of software engineering experience, he leads a team of 20+ developers. John excels in building scalable APIs, optimising system performance, and delivering data-driven insights to enterprise clients. He is passionate about learning new technologies and staying updated with industry trends.",
     speaker: "John Fernandes",
@@ -136,7 +151,6 @@ const cardData: CardData[] = [
   {
     id: 12,
     title: "DevOps Engineer, Pace Wisdom Solutions",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Nibraz Rehaman is a DevOps Engineer at Pace Wisdom Solutions with a strong passion for DevOps practices. He holds a Microsoft certification as an Azure Administrator Associate (az-104) and has expertise in AWS, Terraform, Ansible, CI/CD, Git, Grafana, Prometheus, and Sonarqube. Nibraz is dedicated to optimising and automating processes to enhance efficiency and reliability in software development and deployment.",
     speaker: "Nibraz Rehaman",
@@ -147,7 +161,6 @@ const cardData: CardData[] = [
   {
     id: 13,
     title: "Cloud Associate - Development, Niveus Solutions Pvt. Ltd.",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Jaison Dias, a self-taught software developer with 2+ years of experience, specialises in server architecture and infrastructure management. He actively contributes to development at Niveus Solutions Pvt. Ltd., leveraging his expertise in server planning, setup, migrations, and monitoring. Jaison holds three Google Cloud certifications.",
     speaker: "Jaison Dias",
@@ -158,7 +171,6 @@ const cardData: CardData[] = [
   {
     id: 14,
     title: "Founder, Flashmates.Inc",
-    date: "24th, 02:00 pm - 03:30 pm",
     description:
       "Amrth Shenava, an engineer and entrepreneur, graduated with a Bachelor's in Computer Science from Kent State University. He is currently working on Flashmates, a startup building full-stack technology for housing and real estate, with a mission to create a positive impact by solving everyday problems.",
     speaker: "Amrth Shenava",
@@ -169,7 +181,7 @@ const cardData: CardData[] = [
   // {
   //   id: 15,
   //   title: "Solution Architect, Niveus Solutions Pvt. Ltd.",
-  //   date: "24th, 02:00 pm - 03:30 pm",
+  //
   //   description:
   //     "Sujith Kumar, Solution Architect at Niveus Solutions, specializing in cloud, modernization, and migration solutions for BFSI. Brings extensive experience from Infosys, designing and managing modernization projects, ensuring seamless and secure migrations.",
   //   speaker: "Sujith Kumar",
@@ -180,7 +192,7 @@ const cardData: CardData[] = [
   // {
   //   id: 16,
   //   title: "Cloud Engineer, Niveus Solutions Pvt. Ltd.",
-  //   date: "24th, 02:00 pm - 03:30 pm",
+  //
   //   description:
   //     "Krishna Prasad N Rao is a Cloud Engineer at Niveus Solutions Pvt. Ltd. He brings valuable experience from his tenure as an assistant professor at N M A M Institute of Technology.",
   //   speaker: "Krishna Prasad N Rao",
