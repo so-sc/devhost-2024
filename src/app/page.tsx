@@ -38,7 +38,7 @@ export default function Home() {
             className="object-right lg:w-[53rem] lg:h-[53rem] md:w-[40rem] md:h-[40rem] w-[30rem] h-[30rem] md:mt-96 sm:mt-[30rem] mt-[40rem] object-cover"
           ></Image>
         </div>
-        <Counter />
+        {/* <Counter /> */}
         <Schedule />
         <Speakers />
       </div>
