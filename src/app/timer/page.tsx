@@ -28,8 +28,8 @@ const Countdown = () => {
   const [timerStopped, setTimerStopped] = useState(false);
 
   useEffect(() => {
-    const countdownEnd = 14 * HOUR + 0 * MINUTE; // 02:00 pm in seconds
-    const countupEnd = countdownEnd + 20 * HOUR; // 20 hours after the start, the hackathon end is displayed
+    const countdownEnd = 18 * HOUR + 0 * MINUTE; // 02:00 pm in seconds
+    const countupEnd = countdownEnd + 20 * MINUTE; // 20 hours after the start, the hackathon end is displayed
 
     const currentTimeInSeconds = getCurrentTimeInSeconds();
 
