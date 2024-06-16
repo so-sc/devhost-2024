@@ -4,6 +4,7 @@ import Confetti from "react-confetti";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
 const Countdown = () => {
   const getCurrentTimeInSeconds = () => {
     const currentTime = new Date();
@@ -27,35 +28,31 @@ const Countdown = () => {
   const [countingDown, setCountingDown] = useState(true);
   const [timerStopped, setTimerStopped] = useState(false);
 
-  useEffect(() => {
-    const countdownEnd = 18 * HOUR + 0 * MINUTE; // 02:00 pm in seconds
-    const countupEnd = countdownEnd + 20 * MINUTE; // 20 hours after the start, the hackathon end is displayed
+  const targetDate = new Date("2024-06-15T18:00:00"); // Set the target date and time for countdown end
+  const countdownEnd = targetDate.getTime() / 1000;
+  const countupEnd = countdownEnd + 20 * HOUR; // 20 hours after the start
 
-    const currentTimeInSeconds = getCurrentTimeInSeconds();
+  const getTimeRemaining = (endTime: number) => {
+    const currentTimeInSeconds = new Date().getTime() / 1000;
+    const timeDiff = endTime - currentTimeInSeconds;
+
+    return {
+      days: Math.floor(timeDiff / DAY),
+      hours: Math.floor((timeDiff % DAY) / HOUR),
+      minutes: Math.floor((timeDiff % HOUR) / MINUTE),
+      seconds: Math.floor(timeDiff % MINUTE),
+    };
+  };
+
+  useEffect(() => {
+    const currentTimeInSeconds = new Date().getTime() / 1000;
 
     if (currentTimeInSeconds < countdownEnd) {
-      // Countdown logic
-      setRemaining({
-        days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
-        hours: Math.floor(((countdownEnd - currentTimeInSeconds) % DAY) / HOUR),
-        minutes: Math.floor(
-          ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
-        ),
-        seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
-      });
+      setRemaining(getTimeRemaining(countdownEnd));
     } else if (currentTimeInSeconds < countupEnd) {
-      // Count up logic
-      setRemaining({
-        days: 0,
-        hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
-        minutes: Math.floor(
-          ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
-        ),
-        seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
-      });
+      setRemaining(getTimeRemaining(countupEnd));
       setCountingDown(false);
     } else {
-      // Timer has stopped
       setRemaining({
         days: 0,
         hours: 0,
@@ -66,33 +63,14 @@ const Countdown = () => {
     }
 
     const intervalId = setInterval(() => {
-      const currentTimeInSeconds = getCurrentTimeInSeconds();
+      const currentTimeInSeconds = new Date().getTime() / 1000;
 
       if (currentTimeInSeconds < countdownEnd) {
-        // Countdown logic
-        setRemaining({
-          days: Math.floor((countdownEnd - currentTimeInSeconds) / DAY),
-          hours: Math.floor(
-            ((countdownEnd - currentTimeInSeconds) % DAY) / HOUR
-          ),
-          minutes: Math.floor(
-            ((countdownEnd - currentTimeInSeconds) % HOUR) / MINUTE
-          ),
-          seconds: Math.floor((countdownEnd - currentTimeInSeconds) % MINUTE),
-        });
+        setRemaining(getTimeRemaining(countdownEnd));
       } else if (currentTimeInSeconds < countupEnd) {
-        // Count up logic
-        setRemaining({
-          days: 0,
-          hours: Math.floor((currentTimeInSeconds - countdownEnd) / HOUR),
-          minutes: Math.floor(
-            ((currentTimeInSeconds - countdownEnd) % HOUR) / MINUTE
-          ),
-          seconds: Math.floor((currentTimeInSeconds - countdownEnd) % MINUTE),
-        });
+        setRemaining(getTimeRemaining(countupEnd));
         setCountingDown(false);
       } else {
-        // Timer has stopped
         setRemaining({
           days: 0,
           hours: 0,
@@ -105,7 +83,7 @@ const Countdown = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [countdownEnd, countupEnd]);
 
   return (
     <div className="p-4 space-y-3 h-screen flex flex-col justify-center items-center">
