@@ -1,82 +1,82 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { COLLEGES, EVENTS } from "@/lib/constants"
-import { createClient } from "@/utils/supabase/client"
-import Image from "next/image"
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { toast } from "sonner"
+} from "@/components/ui/select";
+import { COLLEGES, EVENTS } from "@/lib/constants";
+import { createClient } from "@/utils/supabase/client";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 
 export default function RegisterForm() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone, setPhone] = useState("")
-  const [college, setCollege] = useState("")
-  const [branch, setBranch] = useState("")
-  const [year, setYear] = useState("")
-  const [loading, setLoading] = useState(false)
-  const [selectedEvents, setSelectedEvents] = useState<number[]>([])
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [college, setCollege] = useState("");
+  const [branch, setBranch] = useState("");
+  const [year, setYear] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [selectedEvents, setSelectedEvents] = useState<number[]>([]);
   const [eventCounts, setEventCounts] = useState<number[]>(
     new Array(EVENTS.length).fill(0)
-  )
+  );
 
-  const supabase = createClient()
+  const supabase = createClient();
 
   useEffect(() => {
     const fetchEventCounts = async () => {
       const { data, error } = await supabase
         .from("registrations")
-        .select("events")
+        .select("events");
 
       if (error) {
-        console.error("Error fetching event counts:", error)
-        return
+        console.error("Error fetching event counts:", error);
+        return;
       }
 
-      const counts = new Array(EVENTS.length).fill(0)
+      const counts = new Array(EVENTS.length).fill(0);
       data.forEach((registration) => {
-        const events = JSON.parse(registration.events)
+        const events = JSON.parse(registration.events);
         events.forEach((event: any) => {
-          counts[event] += 1
-        })
-      })
+          counts[event] += 1;
+        });
+      });
 
-      setEventCounts(counts)
-    }
+      setEventCounts(counts);
+    };
 
-    fetchEventCounts()
-  }, [])
+    fetchEventCounts();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
 
     // Email validation (simple regex)
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      toast.error("Invalid email format")
-      return
+      toast.error("Invalid email format");
+      return;
     }
 
     // Phone number validation (10 digits)
     if (phone.length !== 10 || !/^\d{10}$/.test(phone)) {
-      toast.error("Phone number must be exactly 10 digits")
-      return
+      toast.error("Phone number must be exactly 10 digits");
+      return;
     }
 
     // Ensure at least one event is selected
     if (selectedEvents.length === 0) {
-      toast.error("Please select at least one event to RSVP")
-      return
+      toast.error("Please select at least one event to RSVP");
+      return;
     }
 
     // Check if any selected event has reached its seat limit
@@ -84,12 +84,12 @@ export default function RegisterForm() {
       if (eventCounts[eventIndex] >= EVENTS[eventIndex].seats) {
         toast.error(
           `Registration for "${EVENTS[eventIndex].name}" is full. Please select another event.`
-        )
-        return
+        );
+        return;
       }
     }
 
-    setLoading(true)
+    setLoading(true);
 
     const { data, error } = await supabase.from("registrations").insert([
       {
@@ -101,31 +101,34 @@ export default function RegisterForm() {
         year: year,
         events: selectedEvents,
       },
-    ])
+    ]);
 
     if (error) {
-      setLoading(false)
-      console.error("Error inserting data:", error)
+      setLoading(false);
+      console.error("Error inserting data:", error);
+      toast.error("Registration Failed", {
+        description: "Please try again later.",
+      });
     } else {
-      toast("Registration Successful!", {
+      toast.success("Registration Successful!", {
         description: "We're excited to see you at the event!",
-      })
-      setLoading(false)
-      console.log("Data inserted successfully:", data)
-      setName("")
-      setEmail("")
-      setPhone("")
-      setCollege("")
-      setBranch("")
-      setYear("")
-      setSelectedEvents([])
-      const newEventCounts = [...eventCounts]
+      });
+      setLoading(false);
+      console.log("Data inserted successfully:", data);
+      setName("");
+      setEmail("");
+      setPhone("");
+      setCollege("");
+      setBranch("");
+      setYear("");
+      setSelectedEvents([]);
+      const newEventCounts = [...eventCounts];
       selectedEvents.forEach((eventIndex) => {
-        newEventCounts[eventIndex] += 1
-      })
-      setEventCounts(newEventCounts)
+        newEventCounts[eventIndex] += 1;
+      });
+      setEventCounts(newEventCounts);
     }
-  }
+  };
 
   return (
     <div className="max-w-2xl mx-auto md:pt-5 pt-10">
@@ -265,7 +268,24 @@ export default function RegisterForm() {
                       <p>Speaker: {event.speaker}</p>
                       <p>Date: {event.date}</p>
                       <p>Time: {event.time}</p>
-                      <p>Only limited seats available, Register soon!</p>
+                      {event.seats - eventCounts[index] < 20 &&
+                      event.seats - eventCounts[index] != 0 ? (
+                        <p className="text-red-400">
+                          Hurry Up! Only {event.seats - eventCounts[index]}{" "}
+                          Seats Available
+                        </p>
+                      ) : (
+                        <p>
+                          {event.seats - eventCounts[index] == 0 ? (
+                            <p className="text-red-400">{"Seats Full :("}</p>
+                          ) : (
+                            <p>
+                              Available Seats:{" "}
+                              {event.seats - eventCounts[index]}
+                            </p>
+                          )}
+                        </p>
+                      )}
                     </div>
                   </div>
                   {selectedEvents.includes(index) ? (
@@ -276,7 +296,7 @@ export default function RegisterForm() {
                       onClick={() => {
                         setSelectedEvents(
                           selectedEvents.filter((e) => e !== index)
-                        )
+                        );
                       }}
                     >
                       Un-RSVP
@@ -292,7 +312,7 @@ export default function RegisterForm() {
                       }
                       type="button"
                       onClick={() => {
-                        setSelectedEvents([...selectedEvents, index])
+                        setSelectedEvents([...selectedEvents, index]);
                       }}
                     >
                       RSVP
@@ -326,5 +346,5 @@ export default function RegisterForm() {
         </div>
       </form>
     </div>
-  )
+  );
 }
