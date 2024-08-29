@@ -101,6 +101,12 @@
   background-repeat: no-repeat;
 }
 
+.event_card {
+  background-image: url("/speaker_card.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* * {
   outline: 1px solid red;
 } */

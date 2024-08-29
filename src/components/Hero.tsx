@@ -90,7 +90,7 @@ export default function Hero() {
           >
             <div className="w-96 pt-5 md:w-auto md:max-w-3xl">
               <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-10 text-center">
-                14th - 16th June
+                7th - 9th November
               </h1>
             </div>
             <div className="flex md:flex-row flex-col gap-5 pb-20 md:pb-10 w-full">
