@@ -4,6 +4,7 @@ import Counter from "@/components/Counter";
 import CursorTrailCanvas from "@/components/CursorTrailCanvas";
 import Events from "@/components/Events";
 import FAQ from "@/components/Faq";
+import Gallery from "@/components/Gallery";
 import HackathonRegistration from "@/components/HackathonRegistration";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
@@ -54,6 +55,9 @@ export default function Home() {
             alt="background"
             className="object-right lg:w-[53rem] lg:h-[53rem] md:w-[40rem] md:h-[40rem] w-[30rem] h-[30rem] md:mt-96 sm:mt-[30rem] mt-[40rem] object-cover"
           ></Image>
+        </div>
+        <div className="max-w-7xl relative px-5 mx-auto">
+          <Gallery />
         </div>
         <div className="max-w-7xl relative px-5 mx-auto">
           <Sponsors />
