@@ -54,7 +54,7 @@ const scheduleData = [
       },
       {
         icon: <Monitor />,
-        title: "UI Battles",
+        title: "CSS Action",
         time: "11:30 pm - 1:30 pm",
         description: "Open Area Lounge",
         speaker: "Put your web design chops to the test!",
@@ -109,7 +109,7 @@ const scheduleData = [
     events: [
       {
         icon: <SquareCode />,
-        title: "CP",
+        title: "Competitive programming",
         time: "08:45 am - 9:45 am",
         description: "",
         speaker: "Competitive Programming Battle: Unleash Your Coding Prowess",
