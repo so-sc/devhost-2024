@@ -17,25 +17,25 @@ export default function Events() {
   const cardData: CardData[] = [
     {
       id: 1,
-      title: "UI-Battles",
+      title: "CSS action",
       caption: "Put your web design chops to the test!",
       description:
         "A dynamic web-based competition that tests your design and coding skills. Join to showcase stunning UI using HTML, CSS, JavaScript, and / or other CSS libraries.",
       organizer: "Koshin Hegde - 7899715941",
       date: "7th Nov",
       time: "11:30am - 12:45pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "ui-battle.png",
     },
     {
       id: 2,
-      title: "CP",
+      title: "Competitive Programming",
       caption: "Competitive Programming Battle: Unleash Your Coding Prowess",
       description:
         "Are you a coding virtuoso ready to take on the ultimate challenge? Join our competitive programming battle and prove your skills against the best minds in the field.",
       organizer: "Nithesh Alva - 7843775694",
       date: "8th Nov",
       time: "8:45am - 9:45am",
-      imageSrc: "temp.jpg",
+      imageSrc: "cp.jpg",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export default function Events() {
       organizer: "Yash Laxman - 6362072050",
       date: "8th Nov",
       time: "10:30am - 12:00pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "ctf.png",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ export default function Events() {
       organizer: "Rithuparna K.S - 7019821295",
       date: "8th Nov",
       time: "12:00pm - 1:30pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "blind-coding.jpeg",
     },
     {
       id: 5,
@@ -68,18 +68,18 @@ export default function Events() {
       organizer: "Apeksha L Naik - 8904315769",
       date: "8th Nov",
       time: "10:30am - 1:30pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "tech-pitch.png",
     },
     {
       id: 6,
-      title: "BGMI",
+      title: "BGMI: Battlegrounds Mobile India",
       caption: "Dominate the battlefield in our BGMI tournament!",
       description:
         "Win the tournament by demonstrating your abilities and emerging victorious. Showcase your strategic brilliance, accuracy shooting, and collaborative spirit.",
       organizer: "Advaith S Shetty - 9902698070",
       date: "8th Nov",
       time: "2:00pm - 4:00pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "bgmi.jpg",
     },
     {
       id: 7,
@@ -90,7 +90,7 @@ export default function Events() {
       organizer: "Manushree P B - 6363316781",
       date: "Date not allotted",
       time: "Time not allotted",
-      imageSrc: "temp.jpg",
+      imageSrc: "rubix-cube.jpeg",
     },
     {
       id: 8,
@@ -101,7 +101,7 @@ export default function Events() {
       organizer: "Kshama S - 9741433993",
       date: "Date not allotted",
       time: "Time not allotted",
-      imageSrc: "temp.jpg",
+      imageSrc: "speed-typing.jpg",
     },
 
     {
@@ -113,7 +113,7 @@ export default function Events() {
       organizer: "Not yet decided",
       date: "7th Nov",
       time: "2:15pm - 4:30pm",
-      imageSrc: "temp.jpg",
+      imageSrc: "Valorant.png",
     },
   ];
 
