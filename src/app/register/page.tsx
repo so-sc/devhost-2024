@@ -18,7 +18,12 @@
 // import { toast } from "sonner"
 
 export default function RegisterForm() {
-  return <div></div>
+  return (
+    <div className="py-48 flex flex-col justify-center items-center">
+      <p className="font-bold text-2xl">Uh Oh! You came too early!</p>
+      <p>Registrations opening soon</p>
+    </div>
+  )
 
   // const [name, setName] = useState("")
   // const [email, setEmail] = useState("")
