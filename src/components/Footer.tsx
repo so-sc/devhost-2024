@@ -72,7 +72,7 @@ const Footer = () => {
                 >
                   sosc@sahyadri.edu.in
                 </Link>
-                <p className="pt-2">+91 97412 68512</p>
+                <p className="pt-2">+91 79941 34420</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6">

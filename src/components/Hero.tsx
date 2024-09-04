@@ -44,14 +44,14 @@ export default function Hero() {
                   width={500}
                   height={500}
                 />
-                <Image
+                {/* <Image
                   priority
                   src="/niveus_logo_white.png"
                   alt="logo"
                   className="w-20 h-4"
                   width={500}
                   height={500}
-                />
+                /> */}
               </div>
               <p className="pt-2 tracking-wide">Presents</p>
             </div>
@@ -65,7 +65,7 @@ export default function Hero() {
                 height={500}
               />
               <p className="md:text-sm text-xs pt-3 tracking-wide text-primary">
-                Where Curiosity Meets Expertise.
+                Expertise Redefined, Experience Reimagined.
               </p>
             </div>
           </motion.div>
@@ -81,7 +81,15 @@ export default function Hero() {
           duration: 0.3,
         }}
       >
-        <AnimatePresence mode="wait">
+        <InfiniteMovingCards
+          items={[
+            { title: "Registrations Opening Soon" },
+            { title: "|" },
+            { title: "Stay Tuned" },
+            { title: "|" },
+          ]}
+        />
+        {/* <AnimatePresence mode="wait">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -90,7 +98,7 @@ export default function Hero() {
           >
             <div className="w-96 pt-5 md:w-auto md:max-w-3xl">
               <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-10 text-center">
-                14th - 16th June
+                7th - 9th November
               </h1>
             </div>
             <div className="flex md:flex-row flex-col gap-5 pb-20 md:pb-10 w-full">
@@ -124,7 +132,7 @@ export default function Hero() {
               </Link>
             </div>
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
       </motion.div>
 
       <div className="absolute z-40 float1 bottom-0 py-10">
