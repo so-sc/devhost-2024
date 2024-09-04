@@ -12,6 +12,7 @@ import Schedule from "@/components/Schedule";
 import Speakers from "@/components/Speakers";
 import Sponsors from "@/components/Sponsors";
 import Image from "next/image";
+import HackathonRegistration from "@/components/HackathonRegistration";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
         <AboutDevhost />
         <AboutHackathon />
         <Events />
-        <Speakers />
+        {/* <Speakers /> */}
       </div>
       <div className="relative">
         <div className="absolute top-0 right-0 rotate-180 -z-20">
@@ -61,9 +62,9 @@ export default function Home() {
         <div className="max-w-7xl relative px-5 mx-auto">
           <Gallery />
         </div>
-        <div className="max-w-7xl relative px-5 mx-auto">
+        {/* <div className="max-w-7xl relative px-5 mx-auto">
           <Sponsors />
-        </div>
+        </div> */}
       </div>
       <div className="max-w-7xl relative px-5 mx-auto">
         <Map />

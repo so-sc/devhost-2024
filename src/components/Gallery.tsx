@@ -10,7 +10,7 @@ import "react-photo-album/rows.css";
 const photos = [
   { src: "/gallery/1.jpg", width: 1800, height: 900 },
   { src: "/gallery/2.jpg", width: 1600, height: 900 },
-  { src: "/gallery/3.jpg", width: 900, height: 900 },
+  // { src: "/gallery/3.jpg", width: 900, height: 900 },
   { src: "/gallery/4.jpg", width: 1200, height: 900 },
   { src: "/gallery/5.jpg", width: 1400, height: 900 },
   { src: "/gallery/6.jpg", width: 1200, height: 900 },

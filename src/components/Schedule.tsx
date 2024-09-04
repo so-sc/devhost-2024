@@ -56,7 +56,7 @@ const scheduleData = [
         icon: <Monitor />,
         title: "CSS Action",
         time: "11:30 pm - 1:30 pm",
-        description: "Open Area Lounge",
+        description: "TBA",
         speaker: "Put your web design chops to the test!",
         type: "Competition",
       },
@@ -88,7 +88,7 @@ const scheduleData = [
 
       {
         icon: <Gamepad2 />,
-        title: "Valorent",
+        title: "Valorant",
         time: "02:15 pm - 04:30 pm",
         description: "TBA",
         speaker: "Become the ultimate agent in our Valorant competition!",
@@ -247,9 +247,9 @@ const Schedule = () => {
                       <div className="mb-2 text-primary md:text-base text-sm tracking-wider">
                         {event.speaker}
                       </div>
-                      <time className="block mb-2 font-normal leading-none text-white/60">
+                      {/* <time className="block mb-2 font-normal leading-none text-white/60">
                         {event.time}
-                      </time>
+                      </time> */}
                       <p className="text-base font-normal text-white/85">
                         {event.description}
                       </p>
