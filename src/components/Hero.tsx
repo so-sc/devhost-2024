@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -7,6 +7,15 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Hero() {
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    setEmail("");
+  };
+
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
       <motion.div
@@ -26,6 +35,7 @@ export default function Hero() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
           >
+            {/* Logo and Header Section */}
             <div className="flex flex-col pb-6 justify-center items-center">
               <div className="flex gap-5 justify-center items-center">
                 <Image
@@ -55,6 +65,8 @@ export default function Hero() {
               </div>
               <p className="pt-2 tracking-wide">Presents</p>
             </div>
+
+            {/* Main Logo Section */}
             <div className="flex w-fit flex-col">
               <Image
                 priority
@@ -71,6 +83,8 @@ export default function Hero() {
           </motion.div>
         </AnimatePresence>
       </motion.div>
+
+      {/* Infinite Moving Cards Section */}
       <motion.div
         initial={{ y: 10, opacity: 0, filter: "blur(5px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -135,7 +149,58 @@ export default function Hero() {
         </AnimatePresence> */}
       </motion.div>
 
-      <div className="absolute z-40 float1 bottom-0 py-10">
+      {/* Notify Me Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="w-full max-w-md mx-auto mt-8 px-4"
+      >
+        {isSubmitted ? (
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center font-medium"
+            style={{ color: "#aef737" }}
+          >
+            Thank you for subscribing! We'll notify you when we launch.
+          </motion.p>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
+            <div className="w-full flex rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-600 hover:border-gray-400 transition-colors duration-300">
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="flex-grow bg-[#383838] text-white px-4 py-3 focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="bg-[#9ff032] text-black px-6 py-3 font-medium hover:bg-[#70f524] transition-colors duration-300"
+              >
+                Notify Me
+              </button>
+            </div>
+            <p className="text-center mt-4 text-sm text-gray-400">
+              Be the first to know when registrations open!
+            </p>
+          </form>
+        )}
+      </motion.div>
+
+      {/* Animated Arrow Icon */}
+      <motion.div
+        className="absolute z-40 bottom-0 py-10"
+        animate={{ y: [0, -10, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 1.5,
+          ease: "easeInOut",
+        }}
+      >
         <svg
           className="w-8"
           xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +213,7 @@ export default function Hero() {
             d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"
           />
         </svg>
-      </div>
+      </motion.div>
     </div>
   );
 }
