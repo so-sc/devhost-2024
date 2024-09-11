@@ -54,11 +54,19 @@ export default function Hero() {
                   width={500}
                   height={500}
                 />
+                {/* <Image
+                  priority
+                  src="/niveus_logo_white.png"
+                  alt="logo"
+                  className="w-20 h-4"
+                  width={500}
+                  height={500}
+                /> */}
+
               </div>
               <p className="pt-2 tracking-wide">Presents</p>
             </div>
 
-            {/* Main Logo Section */}
             <div className="flex w-fit flex-col">
               <Image
                 priority
@@ -76,7 +84,7 @@ export default function Hero() {
         </AnimatePresence>
       </motion.div>
 
-      {/* Infinite Moving Cards Section */}
+      {/*Moving Cards Section */}
       <motion.div
         initial={{ y: 10, opacity: 0, filter: "blur(5px)" }}
         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
@@ -95,6 +103,50 @@ export default function Hero() {
             { title: "|" },
           ]}
         />
+        {/* <AnimatePresence mode="wait">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.1 }}
+          >
+            <div className="w-96 pt-5 md:w-auto md:max-w-3xl">
+              <h1 className="text-2xl font-medium tracking-wide md:px-5 px-2 pb-10 text-center">
+                7th - 9th November
+              </h1>
+            </div>
+            <div className="flex md:flex-row flex-col gap-5 pb-20 md:pb-10 w-full">
+              <Link
+                href="https://unstop.com/o/8SGos2D?lb=ZReY3Op"
+                target="_blank"
+                className="md:px-0 px-5 flex mx-auto"
+              >
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="bg-background md:w-60 w-80 px-10 group flex items-center justify-center space-x-2"
+                >
+                  <span>Hackathon</span>
+                  <span className="group-hover:text-primary">
+                    <ArrowRightIcon />
+                  </span>
+                </HoverBorderGradient>
+              </Link>
+              <Link href="/register" className="md:px-0 px-5 flex mx-auto">
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="bg-background md:w-60 w-80 px-10 group flex items-center justify-center space-x-2"
+                >
+                  <span>Events</span>
+                  <span className="group-hover:text-primary">
+                    <ArrowRightIcon />
+                  </span>
+                </HoverBorderGradient>
+              </Link>
+            </div>
+          </motion.div>
+        </AnimatePresence> */}
       </motion.div>
 
       {/* Notify Me Section */}
@@ -139,7 +191,6 @@ export default function Hero() {
         )}
       </motion.div>
 
-      {/* Animated Arrow Icon */}
       <motion.div
         className="absolute z-40 bottom-0 py-10"
         animate={{ y: [0, -10, 0] }}
