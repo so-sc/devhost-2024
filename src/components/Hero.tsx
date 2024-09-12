@@ -9,11 +9,34 @@ import Link from "next/link";
 export default function Hero() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setEmail("");
+    setIsLoading(true);
+    setError("");
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to subscribe');
+      }
+      const data = await response.json();
+      console.log('Subscription successful:', data);
+      setIsSubmitted(true);
+      setEmail(""); 
+    } catch (error) {
+      setError("An error occurred. Please try again.");
+      console.error('Error submitting email:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -169,7 +192,7 @@ export default function Hero() {
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
             <div className="w-full flex rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-600 hover:border-gray-400 transition-colors duration-300">
-            <input
+              <input
                 type="email"
                 placeholder="Enter your email address"
                 value={email}
@@ -180,10 +203,12 @@ export default function Hero() {
               <button
                 type="submit"
                 className="bg-[#9ff032] text-black px-6 py-3 font-medium hover:bg-[#70f524] transition-colors duration-300"
+                disabled={isLoading}
               >
-                Notify Me
+                {isLoading ? 'Submitting...' : 'Notify Me'}
               </button>
             </div>
+            {error && <p className="text-red-500 text-sm">{error}</p>}
             <p className="text-center mt-4 text-sm text-gray-400">
               Be the first to know when registrations open!
             </p>
