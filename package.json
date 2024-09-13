@@ -21,9 +21,12 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
-    "framer-motion": "^11.1.9",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "framer-motion": "^11.5.4",
     "lucide-react": "^0.378.0",
-    "mongodb": "^6.7.0",
+    "mongodb": "^6.8.1",
+    "mongoose": "^8.6.2",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",
@@ -35,6 +38,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/mongodb": "^4.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
