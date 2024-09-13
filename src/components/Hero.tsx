@@ -187,7 +187,7 @@ export default function Hero() {
             className="text-center font-medium"
             style={{ color: "#aef737" }}
           >
-            Thank you for subscribing! We'll notify you when we launch.
+            {"Thank you for subscribing! We'll notify you when we launch."}
           </motion.p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">

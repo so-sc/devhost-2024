@@ -23,7 +23,7 @@
     "cmdk": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "framer-motion": "^11.1.9",
+    "framer-motion": "^11.5.4",
     "lucide-react": "^0.378.0",
     "mongodb": "^6.8.1",
     "mongoose": "^8.6.2",
