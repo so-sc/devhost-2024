@@ -117,6 +117,7 @@ export default function Hero() {
           damping: 10,
           duration: 0.3,
         }}
+        className="max-w-full"
       >
         <InfiniteMovingCards
           items={[
@@ -170,7 +171,7 @@ export default function Hero() {
             </div>
           </motion.div>
         </AnimatePresence> */}
-      </motion.div>
+      </motion.div> 
 
       {/* Notify Me Section */}
       <motion.div
@@ -191,7 +192,7 @@ export default function Hero() {
           </motion.p>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
-            <div className="w-full flex rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-600 hover:border-gray-400 transition-colors duration-300">
+            <div className="w-full flex sm:flex-row flex-col rounded-lg overflow-hidden shadow-lg bg-gray-800 border border-gray-600 hover:border-gray-400 transition-colors duration-300">
               <input
                 type="email"
                 placeholder="Enter your email address"
