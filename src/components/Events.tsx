@@ -133,7 +133,7 @@ export default function Events() {
                 width={500}
                 height={500}
               ></Image> */}
-              <div className="md:ml-20 event_card md:mt-10 border-white/10 border rounded-xl">
+              <div className="event_card md:mt-10 border-white/10 border rounded-xl h-96 flex flex-col justify-around">
                 {/* <Image
                   className="bg-background m-5 border shadow-sm border-white/10 rounded-md z-10 flex md:hidden w-40 h-40 aspect-square"
                   src={`/events/${card.imageSrc}`}
@@ -141,7 +141,7 @@ export default function Events() {
                   width={500}
                   height={500}
                 ></Image> */}
-                <div className="ml-5 md:mt-5 md:ml-[6.5rem] my-5 md:mr-5 mr-5">
+                <div className="md:mt-5 my-5 md:mx-5 mx-5 text-justify">
                   <h1 className="leading-6 mb-1 font-semibold text-xl tracking-wider">
                     {card.title}
                   </h1>
